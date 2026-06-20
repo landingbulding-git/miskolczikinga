@@ -84,7 +84,7 @@ export default function AcademyProcess() {
                 Piacra Lépés
               </h3>
               <p className="text-xs text-charcoal-700 font-light leading-relaxed">
-                Sikeres elméleti és gyakorlati vizsga után átveszed a hivatalos, Hajas László elnök által aláírt állami tanúsítványt és a kész, retusált digitális portfóliódat, amivel már másnap elkezdheted építeni a vevőkörödet.
+                Sikeres elméleti és gyakorlati vizsga után átveszed a hivatalos, elnök által aláírt állami tanúsítványt és a kész, retusált digitális portfóliódat, amivel már másnap elkezdheted építeni a vevőkörödet.
               </p>
             </div>
             <div className="text-[10px] font-mono text-gold-655 tracking-wider uppercase mt-4 block pt-2 border-t border-cream-200">

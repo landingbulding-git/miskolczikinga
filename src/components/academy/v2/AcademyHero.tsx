@@ -97,7 +97,7 @@ export default function AcademyHero() {
                 <div className="flex items-center gap-3">
                   <Award className="w-5 h-5 text-gold-500 stroke-[1.5]" />
                   <h4 className="text-[11px] font-bold uppercase tracking-luxury text-charcoal-800 font-sans">
-                    HAJAS LÁSZLÓ AJÁNLÁSÁVAL
+                    MFKKE SZAKMAI AJÁNLÁSSAL
                   </h4>
                 </div>
                 <p className="text-xs text-charcoal-700/70 font-light leading-relaxed">

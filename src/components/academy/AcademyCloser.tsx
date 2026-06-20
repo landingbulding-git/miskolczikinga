@@ -132,7 +132,7 @@ export default function AcademyCloser() {
               <div className="flex gap-3 items-start">
                 <span className="text-gold-400 shrink-0 mt-0.5">✓</span>
                 <p className="text-sm text-cream-200">
-                  <strong className="text-white font-medium">Állami felnőttképzési tanúsítvány:</strong> Hajas László elnöki aláírásával
+                  <strong className="text-white font-medium">Állami felnőttképzési tanúsítvány:</strong> Hivatalos elnöki aláírással ellátva
                 </p>
               </div>
               <div className="flex gap-3 items-start">

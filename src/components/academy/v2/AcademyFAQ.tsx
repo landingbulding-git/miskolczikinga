@@ -42,7 +42,7 @@ export default function AcademyFAQ() {
     {
       id: 'fa6',
       question: 'Milyen hivatalos oklevelet kapok a tanfolyam végén?',
-      answer: 'Felnőttképzési regisztrációs számmal ellátott, a Magyar Fodrász-Kozmetikus-Körmös Egyesület pecsétjével és Hajas László elnök aláírásával hitelesített, államilag elismert szakmai tanúsítványt. Ezt a fotósok, divatirodák és esküvőszervezők azonnal ismerik.'
+      answer: 'Felnőttképzési regisztrációs számmal ellátott, a Magyar Fodrász-Kozmetikus-Körmös Egyesület pecsétjével és elnöki aláírásával hitelesített, államilag elismert szakmai tanúsítványt. Ezt a fotósok, divatirodák és esküvőszervezők azonnal ismerik.'
     },
     {
       id: 'fa7',

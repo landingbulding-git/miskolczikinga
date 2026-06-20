@@ -89,7 +89,7 @@ export default function AcademyHero() {
                 </div>
                 <div>
                   <h4 className="text-xs font-bold uppercase tracking-wider text-charcoal-900 font-mono">
-                    HAJAS LÁSZLÓ AJÁNLÁSÁVAL
+                    MFKKE SZAKMAI AJÁNLÁSSAL
                   </h4>
                   <p className="text-xs text-charcoal-700 font-light mt-1">
                     Szakmai garancia, amellyel azonnal komolyan vesznek a divat- és esküvői piacon.

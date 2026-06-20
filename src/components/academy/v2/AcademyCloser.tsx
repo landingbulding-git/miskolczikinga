@@ -95,7 +95,7 @@ export default function AcademyCloser() {
                 {[
                   "Személyes, privát lakásstúdió: Anyag- és luxustermék-biztosítás",
                   "Saját fotóstúdió: Retusált, azonnal bevethető digitális portfólió",
-                  "Állami tanúsítvány Hajas László elnöki aláírásával",
+                  "Állami tanúsítvány hivatalos elnöki aláírásával",
                   "Mentorálás kizárólag kis létszámú csoportban",
                   "Bekerülsz Kinga ajánlási hálózatába — és divatprogramokra is magával visz"
                 ].map((item, idx) => (
