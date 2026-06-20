@@ -56,11 +56,11 @@ export default function AcademyPricing() {
   ];
 
   return (
-    <section id="academy-pricing" className="py-20 md:py-32 lg:py-48 bg-cream-100 overflow-hidden">
+    <section id="academy-pricing" className="py-16 md:py-24 bg-cream-100 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="mb-16 md:mb-24 space-y-6">
+        <div className="mb-12 space-y-4">
           <span className="text-[10px] md:text-[11px] font-bold tracking-luxury text-gold-500 uppercase block">Befektetés a jövődbe</span>
           <h2 className="font-serif-lux text-3xl sm:text-4xl lg:text-6xl font-light text-charcoal-800 tracking-tight leading-[1.1] max-w-4xl">
             Transzparens árazás, <br className="hidden sm:block" /><span className="italic">rejtett költségek nélkül.</span>
@@ -216,7 +216,7 @@ export default function AcademyPricing() {
             </div>
 
             {/* Guarantee Section */}
-            <div className="pt-16 mt-12 border-t border-charcoal-800/10 space-y-8">
+            <div className="pt-12 mt-10 border-t border-charcoal-800/10 space-y-8">
               <h4 className="text-[11px] font-bold tracking-luxury text-charcoal-800 uppercase italic text-center lg:text-left">100%-os Gyakorlati Garancia</h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
                 {[

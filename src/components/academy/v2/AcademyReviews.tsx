@@ -30,11 +30,11 @@ export default function AcademyReviews() {
   ];
 
   return (
-    <section className="py-32 md:py-48 bg-cream-100 overflow-hidden">
+    <section className="py-16 md:py-24 bg-cream-100 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header - Magazine Style */}
-        <div className="mb-24 space-y-6">
+        <div className="mb-12 space-y-4">
           <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block">Tanulóink Véleményei</span>
           <h2 className="font-serif-lux text-4xl sm:text-5xl lg:text-6xl font-light text-charcoal-800 tracking-tight leading-[1.1]">
             Tanítványaink 80%-a <br /><span className="italic">Aktívan a Szakmában Dolgozik és Oktat.</span>
@@ -52,13 +52,13 @@ export default function AcademyReviews() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: idx * 0.1 }}
-              className="group space-y-8 relative"
+              className="group space-y-6 relative"
             >
               {/* Subtle Quote Watermark */}
-              <Quote className="absolute -top-4 -left-4 w-12 h-12 text-charcoal-800/5 group-hover:text-gold-400/10 transition-colors duration-500" />
+              <Quote className="absolute -top-4 -left-4 w-10 h-10 text-charcoal-800/5 group-hover:text-gold-400/10 transition-colors duration-500" />
               
-              <div className="space-y-4 relative z-10">
-                <h4 className="font-serif-lux text-2xl font-light text-charcoal-800 leading-snug">
+              <div className="space-y-3 relative z-10">
+                <h4 className="font-serif-lux text-xl lg:text-2xl font-light text-charcoal-800 leading-snug">
                   „{review.title}”
                 </h4>
                 <p className="text-base text-charcoal-700/70 font-light leading-relaxed">
@@ -66,7 +66,7 @@ export default function AcademyReviews() {
                 </p>
               </div>
 
-              <div className="pt-8 border-t border-charcoal-800/5">
+              <div className="pt-6 border-t border-charcoal-800/5">
                 <h5 className="text-[11px] font-bold tracking-luxury text-charcoal-800 uppercase">
                   {review.name}
                 </h5>
@@ -79,13 +79,13 @@ export default function AcademyReviews() {
         </div>
 
         {/* Museum Moment / Social Evidence */}
-        <div className="mt-32 pt-24 border-t border-charcoal-800/5 text-center">
+        <div className="mt-20 pt-16 border-t border-charcoal-800/5 text-center">
           <div className="inline-flex flex-wrap justify-center items-center gap-x-12 gap-y-6 opacity-30 grayscale hover:opacity-60 transition-opacity duration-1000">
             <span className="font-serif-lux text-lg tracking-[0.2em] font-bold uppercase">Magyarország Szépe</span>
             <span className="font-serif-lux text-lg tracking-[0.2em] font-bold uppercase">Fashion Week</span>
             <span className="font-serif-lux text-lg tracking-[0.2em] font-bold uppercase">Nők Lapja</span>
           </div>
-          <p className="text-[10px] font-bold tracking-luxury text-charcoal-700/30 uppercase mt-8">
+          <p className="text-[10px] font-bold tracking-luxury text-charcoal-700/30 uppercase mt-6">
             Események, ahol diákjaink Kinga mellett bizonyíthattak
           </p>
         </div>

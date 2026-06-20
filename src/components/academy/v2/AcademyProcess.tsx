@@ -31,10 +31,10 @@ export default function AcademyProcess() {
   ];
 
   return (
-    <section className="py-32 md:py-48 bg-cream-100">
+    <section className="py-16 md:py-24 bg-cream-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="mb-24">
+        <div className="mb-12">
           <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block mb-4">Átlátható Út</span>
           <h2 className="font-serif-lux text-4xl sm:text-5xl lg:text-6xl font-light text-charcoal-800 tracking-tight leading-[1.1]">
             Válj Elismert, Profi Sminkessé 4 Egyszerű Lépésben.

@@ -15,9 +15,9 @@ export default function AcademyFounder() {
   };
 
   return (
-    <section className="py-32 md:py-48 bg-cream-100 overflow-hidden">
+    <section className="py-16 md:py-24 bg-cream-100 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row gap-20 lg:gap-32 items-center">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 items-center">
           
           {/* Visual Column - Large, editorial portrait */}
           <motion.div 
@@ -37,7 +37,7 @@ export default function AcademyFounder() {
               </div>
               
               {/* Floating Name Moment */}
-              <div className="absolute -bottom-10 -right-10 p-10 bg-white shadow-xl hidden md:block border border-charcoal-800/5">
+              <div className="absolute -bottom-8 -right-8 p-8 bg-white shadow-xl hidden md:block border border-charcoal-800/5">
                 <span className="text-[10px] font-bold tracking-luxury text-gold-500 uppercase block mb-2">
                   A mentorod
                 </span>
@@ -49,13 +49,13 @@ export default function AcademyFounder() {
           </motion.div>
 
           {/* Biographical Narrative - Clean typography & wide spacing */}
-          <div className="lg:w-7/12 space-y-12">
+          <div className="lg:w-7/12 space-y-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="space-y-6"
+              className="space-y-4"
             >
               <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block">
                 A mentorod a siker útján
@@ -67,9 +67,9 @@ export default function AcademyFounder() {
               </h2>
             </motion.div>
             
-            <div className="space-y-8 text-charcoal-700/80 font-light text-lg leading-relaxed max-w-2xl">
+            <div className="space-y-6 text-charcoal-700/80 font-light text-lg leading-relaxed max-w-2xl">
               <p>
-                Hovorka-Miskolczi Kinga vagyok. Több mint 21 éve foglalkozom professzionális sminkeléssel filmforgatásokon, reklámokban, divatbemutatókon, menyasszonyi sminkeken és rangos fashion eseményeken. Közel 10 évig dolgoztam kozmetikusként, mielőtt teljesen a sminkre specializálódtam: a bőrismeret nem kiegészítő a munkámban, hanem az alapja.
+                Hovorka-Miskolczi Kinga vagyok. Több than 21 éve foglalkozom professzionális sminkeléssel filmforgatásokon, reklámokban, divatbemutatókon, menyasszonyi sminkeken és rangos fashion eseményeken. Közel 10 évig dolgoztam kozmetikusként, mielőtt teljesen a sminkre specializálódtam: a bőrismeret nem kiegészítő a munkámban, hanem az alapja.
               </p>
               <p>
                 Nemzetközi versenyeken háromszoros világbajnoki ezüstérmet és Európa-bajnoki aranyérmet szereztem. Ma már nem versenyző vagyok, hanem hazai és nemzetközi zsűritag és versenyfelkészítő.
@@ -84,7 +84,7 @@ export default function AcademyFounder() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.3 }}
-              className="relative p-12 bg-charcoal-800"
+              className="relative p-10 bg-charcoal-800"
             >
               <div className="relative z-10">
                 <p className="font-serif-lux text-xl italic text-cream-100 leading-relaxed">
@@ -94,7 +94,7 @@ export default function AcademyFounder() {
               <div className="absolute top-0 right-0 w-24 h-24 bg-gold-400/10 -z-0" />
             </motion.blockquote>
 
-            <div className="pt-8">
+            <div className="pt-4">
               <button
                 onClick={scrollToForm}
                 className="group relative px-10 py-5 border border-charcoal-800 text-charcoal-800 text-xs font-bold tracking-luxury uppercase overflow-hidden transition-all duration-500 hover:text-cream-100 rounded-none"

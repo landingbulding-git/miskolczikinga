@@ -35,11 +35,11 @@ export default function AcademyProblem() {
   ];
 
   return (
-    <section className="py-32 md:py-48 bg-cream-100 relative overflow-hidden">
+    <section className="py-20 md:py-24 bg-cream-100 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Heading - Editorial & Minimal */}
-        <div className="max-w-3xl mb-24 space-y-6">
+        <div className="max-w-3xl mb-16 space-y-6">
           <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block">Közös célok, Közös sikerek</span>
           <h2 className="font-serif-lux text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight text-charcoal-800 leading-[1.1]">
             Miben különbözik ez a tanfolyam minden más elérhető kurzustól?
@@ -47,7 +47,7 @@ export default function AcademyProblem() {
         </div>
 
         {/* Comparison System (Refined Editorial Cards) */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           
           {/* Card 1: A TIPIKUS SMINKISKOLA (Muted & Quiet) */}
           <motion.div 
@@ -55,9 +55,9 @@ export default function AcademyProblem() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="space-y-12"
+            className="space-y-10"
           >
-            <div className="space-y-2 border-b border-charcoal-800/10 pb-8">
+            <div className="space-y-2 border-b border-charcoal-800/10 pb-6">
               <h3 className="text-[11px] font-bold uppercase tracking-luxury text-charcoal-700/50 font-sans">
                 A TIPIKUS SMINKISKOLA
               </h3>
@@ -66,7 +66,7 @@ export default function AcademyProblem() {
               </p>
             </div>
 
-            <ul className="space-y-8">
+            <ul className="space-y-6">
               {comparisonItems.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-6 group">
                   <span className="text-charcoal-700/30 font-light text-lg mt-[-2px]">✗</span>
@@ -84,14 +84,14 @@ export default function AcademyProblem() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="bg-charcoal-800 p-10 md:p-16 relative shadow-[0_40px_80px_-20px_rgba(0,0,0,0.3)]"
+            className="bg-charcoal-800 p-8 md:p-12 relative shadow-[0_40px_80px_-20px_rgba(0,0,0,0.3)]"
           >
             {/* Subtle Label */}
-            <div className="absolute top-10 right-10 text-[9px] font-bold tracking-[0.3em] text-gold-400/50 uppercase">
+            <div className="absolute top-8 right-8 text-[9px] font-bold tracking-[0.3em] text-gold-400/50 uppercase">
               PRÉMIUM VÁLASZTÁS
             </div>
 
-            <div className="space-y-2 border-b border-white/10 pb-8 mb-12">
+            <div className="space-y-2 border-b border-white/10 pb-6 mb-10">
               <h3 className="text-[11px] font-bold uppercase tracking-luxury text-gold-400 font-sans">
                 KINGA STÚDIÓJA
               </h3>
@@ -100,7 +100,7 @@ export default function AcademyProblem() {
               </p>
             </div>
 
-            <ul className="space-y-8">
+            <ul className="space-y-6">
               {comparisonItems.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-6">
                   <span className="text-gold-400 font-bold text-sm mt-1">✓</span>
@@ -112,18 +112,6 @@ export default function AcademyProblem() {
             </ul>
           </motion.div>
 
-        </div>
-
-        {/* Museum Moment: A brief, confident statement instead of a boxy guarantee */}
-        <div className="mt-48 text-center">
-          <p className="font-serif-lux text-2xl sm:text-3xl italic text-charcoal-800 max-w-2xl mx-auto leading-relaxed">
-            "Garantáljuk a 100%-os anyagbiztosítást és az egyénre szabott, exkluzív mentorálást."
-          </p>
-          <div className="mt-8 flex justify-center gap-4">
-            <div className="w-1 h-1 rounded-full bg-gold-400" />
-            <div className="w-1 h-1 rounded-full bg-gold-400" />
-            <div className="w-1 h-1 rounded-full bg-gold-400" />
-          </div>
         </div>
 
       </div>

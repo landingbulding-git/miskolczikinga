@@ -16,7 +16,7 @@ export default function AcademyHero() {
   };
 
   return (
-    <section className="relative pt-20 pb-32 md:pt-32 md:pb-48 overflow-hidden bg-cream-100">
+    <section className="relative pt-16 pb-20 md:pt-24 md:pb-28 overflow-hidden bg-cream-100">
       {/* Background accents - subtle and airy */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-cream-200/50 -skew-x-12 transform origin-top translate-x-1/4 pointer-events-none" />
       
@@ -27,7 +27,7 @@ export default function AcademyHero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.6 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="mb-16 flex flex-wrap items-center justify-center lg:justify-start gap-x-8 gap-y-4 grayscale opacity-60"
+          className="mb-12 flex flex-wrap items-center justify-center lg:justify-start gap-x-8 gap-y-4 grayscale opacity-60"
         >
           <span className="font-serif-lux text-sm font-bold tracking-widest uppercase">BABOR</span>
           <div className="w-px h-4 bg-charcoal-700/20" />
@@ -38,15 +38,15 @@ export default function AcademyHero() {
           <span className="font-sans font-black uppercase text-sm tracking-tighter">Blikk</span>
         </motion.div>
 
-        <div className="flex flex-col lg:flex-row gap-20 lg:gap-24 items-start">
+        <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
           
           {/* Main Content Area */}
-          <div className="lg:w-7/12 space-y-12">
+          <div className="lg:w-7/12 space-y-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="space-y-8"
+              className="space-y-6"
             >
               <h1 className="font-serif-lux text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight text-charcoal-800 leading-[1.1]">
                 Válj <span className="italic">elismert, magasan fizetett</span> sminkessé mindössze 10 hét alatt, hogy végre a saját kreativitásodból élhess, kötöttségek nélkül.
@@ -64,7 +64,7 @@ export default function AcademyHero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="flex flex-col sm:flex-row items-center gap-8 pt-4"
+              className="flex flex-col sm:flex-row items-center gap-8 pt-2"
             >
               <button
                 onClick={scrollToForm}
@@ -80,7 +80,7 @@ export default function AcademyHero() {
             </motion.div>
 
             {/* Refined Trust Indicators */}
-            <div className="pt-16 grid grid-cols-1 sm:grid-cols-2 gap-12 border-t border-charcoal-800/5">
+            <div className="pt-12 grid grid-cols-1 sm:grid-cols-2 gap-10 border-t border-charcoal-800/5">
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <Trophy className="w-5 h-5 text-gold-500 stroke-[1.5]" />
@@ -124,7 +124,7 @@ export default function AcademyHero() {
               </div>
               
               {/* Floating Quote Moment */}
-              <div className="absolute -bottom-12 -left-12 p-10 bg-white shadow-xl max-w-xs hidden md:block">
+              <div className="absolute -bottom-10 -left-10 p-8 bg-white shadow-xl max-w-xs hidden md:block border border-charcoal-800/5">
                 <p className="font-serif-lux text-xl italic text-charcoal-800 leading-relaxed">
                   "Nem kapkodunk sablonokkal. Minden mozdulatot és arcarány-elemzést személyesen, türelemmel rögzítünk."
                 </p>
@@ -134,7 +134,7 @@ export default function AcademyHero() {
               </div>
               
               {/* Delicate Framing Corners */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 border-t border-r border-gold-300/30 -z-10" />
+              <div className="absolute -top-4 -right-4 w-20 h-24 border-t border-r border-gold-300/30 -z-10" />
             </motion.div>
           </div>
 

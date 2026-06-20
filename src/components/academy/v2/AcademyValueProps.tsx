@@ -22,13 +22,13 @@ export default function AcademyValueProps() {
   ];
 
   return (
-    <section className="bg-cream-100 py-32 md:py-48 overflow-hidden">
+    <section className="bg-cream-100 py-16 md:py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="mb-32 max-w-2xl">
-          <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block mb-4">Kiemelkedő Értékajánlataink</span>
-          <h2 className="font-serif-lux text-4xl sm:text-6xl font-light text-charcoal-800 tracking-tight leading-none mb-8">
+        <div className="mb-16 max-w-2xl">
+          <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block mb-3">Kiemelkedő Értékajánlataink</span>
+          <h2 className="font-serif-lux text-4xl sm:text-6xl font-light text-charcoal-800 tracking-tight leading-none mb-6">
             Minden részlet a szakmai <br /><span className="italic">kiteljesedést</span> szolgálja.
           </h2>
           <p className="text-lg text-charcoal-700/70 font-light leading-relaxed">
@@ -36,18 +36,18 @@ export default function AcademyValueProps() {
           </p>
         </div>
         
-        <div className="space-y-48 md:space-y-64">
+        <div className="space-y-24 md:space-y-32">
           
           {/* Pillar 1: Material Security - Asymmetrical Layout */}
-          <div className="flex flex-col lg:flex-row gap-16 lg:gap-32 items-center">
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 items-center">
             <motion.div 
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1 }}
-              className="lg:w-1/2 space-y-10"
+              className="lg:w-1/2 space-y-8"
             >
-              <div className="space-y-4">
+              <div className="space-y-3">
                 <span className="text-[11px] font-bold text-gold-500 uppercase tracking-luxury block">01 / Anyagellátás</span>
                 <h3 className="font-serif-lux text-3xl sm:text-4xl font-light text-charcoal-800 leading-tight">
                   Teljes Körű Prémium Anyagbiztosítás Extra Költségek Nélkül.
@@ -84,11 +84,11 @@ export default function AcademyValueProps() {
           </div>
 
           {/* Subdued Brand Bar - Replacing loud marquee */}
-          <div className="py-20 border-y border-charcoal-800/5">
-            <p className="text-[10px] font-bold tracking-luxury text-charcoal-700/40 uppercase text-center mb-12">
+          <div className="py-12 border-y border-charcoal-800/5">
+            <p className="text-[10px] font-bold tracking-luxury text-charcoal-700/40 uppercase text-center mb-10">
               A stúdiókban korlátlanul biztosított prémium márkáink
             </p>
-            <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 opacity-40 grayscale transition-all hover:grayscale-0 hover:opacity-100 duration-1000">
+            <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-6 opacity-40 grayscale transition-all hover:grayscale-0 hover:opacity-100 duration-1000">
               {brands.slice(0, 8).map((brand, idx) => (
                 <span key={idx} className="font-serif-lux text-sm tracking-widest font-medium text-charcoal-900">
                   {brand}
@@ -98,15 +98,15 @@ export default function AcademyValueProps() {
           </div>
 
           {/* Pillar 2: Retouched Portfolio - Reversed Asymmetry */}
-          <div className="flex flex-col lg:flex-row-reverse gap-16 lg:gap-32 items-center">
+          <div className="flex flex-col lg:flex-row-reverse gap-12 lg:gap-24 items-center">
             <motion.div 
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1 }}
-              className="lg:w-1/2 space-y-10"
+              className="lg:w-1/2 space-y-8"
             >
-              <div className="space-y-4">
+              <div className="space-y-3">
                 <span className="text-[11px] font-bold text-gold-500 uppercase tracking-luxury block">02 / Portfólió</span>
                 <h3 className="font-serif-lux text-3xl sm:text-4xl font-light text-charcoal-800 leading-tight">
                   Saját Fotóstúdió és Retusált Digitális Portfólió.
@@ -143,15 +143,15 @@ export default function AcademyValueProps() {
           </div>
 
           {/* Pillar 3: Metodika */}
-          <div className="flex flex-col lg:flex-row gap-16 lg:gap-32 items-center">
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 items-center">
             <motion.div 
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1 }}
-              className="lg:w-1/2 space-y-10"
+              className="lg:w-1/2 space-y-8"
             >
-              <div className="space-y-4">
+              <div className="space-y-3">
                 <span className="text-[11px] font-bold text-gold-500 uppercase tracking-luxury block">03 / Metodika</span>
                 <h3 className="font-serif-lux text-3xl sm:text-4xl font-light text-charcoal-800 leading-tight">
                   Legkeresettebb, legmodernebb technikák.
@@ -187,15 +187,15 @@ export default function AcademyValueProps() {
           </div>
 
           {/* Pillar 4: Bőrdiagnosztika */}
-          <div className="flex flex-col lg:flex-row-reverse gap-16 lg:gap-32 items-center">
+          <div className="flex flex-col lg:flex-row-reverse gap-12 lg:gap-24 items-center">
             <motion.div 
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1 }}
-              className="lg:w-1/2 space-y-10"
+              className="lg:w-1/2 space-y-8"
             >
-              <div className="space-y-4">
+              <div className="space-y-3">
                 <span className="text-[11px] font-bold text-gold-500 uppercase tracking-luxury block">04 / Bőrdiagnosztika</span>
                 <h3 className="font-serif-lux text-3xl sm:text-4xl font-light text-charcoal-800 leading-tight">
                   A bőr ismerete nélkül a smink csak festék. Itt az alapoktól sajátítod el a lényeget.

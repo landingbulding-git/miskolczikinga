@@ -17,7 +17,7 @@ export default function AcademyFAQ() {
     {
       id: 'fa1',
       question: 'Nincs sminkes előképzettségem. Nekem való ez a képzés?',
-      answer: 'Igen. A feltétel nem az előképzettség, hanem az elhivatottság. Az első naptól az alapoktól indulunk, de az ütem és a szint azt teszi lehetővé, hogy 10 hét alatt piacképes tudással kerülj ki. Kinga személyesen szűri a jelentkezőket — hogy biztosan csak komoly, fejlődni vágyó emberek kerüljenek a csoportba.'
+      answer: 'Igen. A feltétel nem az előképzettség, hanem az elhivatottság. Az alapoktól indulunk, de az ütem és a szint azt teszi lehetővé, hogy 10 hét alatt piacképes tudással kerülj ki. Kinga személyesen szűri a jelentkezőket — hogy biztosan csak komoly, fejlődni vágyó emberek kerüljenek a csoportba.'
     },
     {
       id: 'fa2',
@@ -52,11 +52,11 @@ export default function AcademyFAQ() {
   ];
 
   return (
-    <section className="py-32 md:py-48 bg-cream-100 overflow-hidden">
+    <section className="py-16 md:py-24 bg-cream-100 overflow-hidden">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="mb-24 space-y-6">
+        <div className="mb-12 space-y-4">
           <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block">GYIK</span>
           <h2 className="font-serif-lux text-4xl sm:text-5xl lg:text-6xl font-light text-charcoal-800 tracking-tight leading-[1.1]">
             Kérdésed van? <br /><span className="italic">Talán itt rögtön megtalálod.</span>
@@ -67,7 +67,7 @@ export default function AcademyFAQ() {
           {faqs.map((f) => {
             const isOpen = openFaq === f.id;
             return (
-              <div key={f.id} className="py-8">
+              <div key={f.id} className="py-6">
                 <button
                   onClick={() => toggleFaq(f.id)}
                   className="w-full flex items-center justify-between text-left group"
@@ -88,7 +88,7 @@ export default function AcademyFAQ() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.5, ease: [0.23, 1, 0.32, 1] }}
                     >
-                      <div className="pt-6 text-base text-charcoal-700/70 font-light leading-relaxed max-w-2xl">
+                      <div className="pt-4 text-base text-charcoal-700/70 font-light leading-relaxed max-w-2xl">
                         {f.answer}
                       </div>
                     </motion.div>
