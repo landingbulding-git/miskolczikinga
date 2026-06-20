@@ -10,22 +10,22 @@ export default function AcademyProcess() {
   const steps = [
     {
       title: "Gyors Jelentkezés",
-      description: "Töltsd ki az alábbi 30 másodperces jelentkezési űrlapot. Gondosan szűrjük a résztvevőket, hogy elhivatott, valóban fejlődni akaró közösség alakuljon ki.",
+      description: "Töltsd ki az alábbi 30 másodperces jelentkezési űrlapot, és írd le röviden a céljaidat. Gondosan szűrjük a résztvevőket, hogy elhivatott, valóban fejlődni akaró közösség alakuljon ki.",
       label: "Gondos előszűrés"
     },
     {
       title: "A Helybiztosítás",
-      description: "A 10%-os helyfoglalási előleg teljesítésével azonnal zároljuk a helyedet a kis létszámú csoportban. Nincs meglepetés, a helyed 100%-ig foglalt.",
+      description: "A 10%-os helyfoglalási előleg banki átutalásával vagy készpénzes teljesítésével azonnal zároljuk a helyedet a kis létszámú csoportban. Nincs meglepetés, a helyed 100%-ig foglalt.",
       label: "Biztosítsd be a helyedet"
     },
     {
-      title: "100 Órás Mentorprogram",
-      description: "10 héten át tartó, rendkívül intenzív, gyakorlat-fókuszú oktatás családias, professzionális lakásstúdióban, Kinga közvetlen mentorálása mellett.",
+      title: "100 Órás Élő Mentorprogram",
+      description: "10 héten át tartó, rendkívül intenzív, gyakorlat-fókuszú sminkes oktatás Szegeden vagy Budapesten, családias, átjáróház-mentes, professzionális lakásstúdióban, Kinga közvetlen mentorálása mellett.",
       label: "Intenzív Gyakorlat"
     },
     {
       title: "Piacra Lépés",
-      description: "Sikeres vizsga után átveszed a hivatalos állami tanúsítványt és a kész digitális portfóliódat, amivel már másnap építheted a vevőkörödet.",
+      description: "Sikeres elméleti és gyakorlati vizsga után átveszed a hivatalos, Hajas László elnök által aláírt állami tanúsítványt és a kész, retusált digitális portfóliódat, amivel már másnap elkezdheted építheted a vevőkörödet.",
       label: "Hivatalos Tanúsítvány"
     }
   ];
@@ -37,7 +37,7 @@ export default function AcademyProcess() {
         <div className="mb-24">
           <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block mb-4">Átlátható Út</span>
           <h2 className="font-serif-lux text-4xl sm:text-5xl lg:text-6xl font-light text-charcoal-800 tracking-tight leading-[1.1]">
-            Az út a profivá váláshoz.
+            Válj Elismert, Profi Sminkessé 4 Egyszerű Lépésben.
           </h2>
         </div>
 

@@ -11,21 +11,21 @@ export default function AcademyReviews() {
   const reviews = [
     {
       name: "Kovács Petra",
-      role: "Esküvői & Divatsminkes • Szeged",
-      title: "A végzés után azonnal felkértek egy esküvői fotózásra.",
-      text: "A tanfolyam alatt készített és Kinga által retusált képekkel azonnal el tudtam indulni valódi munkát keresni. Az oklevélnek köszönhetően az ügynökségek és a menyasszonyok azonnal komolyan vettek."
+      role: "Esküvői & Divatsminkes specialistaként dolgozik • Szeged",
+      title: "A végzés után azonnal felkértek egy esküvői fotózásra a portfólióm alapján!",
+      text: "A tanfolyam alatt készített és Kinga professzionális fényképezőjével retusált képekkel azonnal el tudtam indulni valódi munkát keresni és feltölteni a közösségi oldalaimat. A nevének és az oklevélnek köszönhetően az ügynökségek és a menyasszonyok azonnal komolyan vettek és szóba álltak velem."
     },
     {
       name: "Németh Laura",
       role: "Szépségipari Vállalkozó & Oktató • Budapest",
-      title: "Végre megértettem a sminkelés valódi logikáját.",
-      text: "Kinga megtanította a bőrdiagnosztika, a színdiagnózis és az arc-architektúra kőkemény logikáját, így ma már teljesen magabiztosan javítok érett vagy kifejezetten problémás bőrt is."
+      title: "Végre megértettem a sminkelés valódi logikáját a merev szabályok helyett.",
+      text: "Más sminkiskolákban csak lemásoltatták az éppen divatos maszkos formákat az azonos arckarakterű diákokon. Kinga megtanította a bőrdiagnosztika, a színdiagnózis és az arc-architektúra kőkemény logikáját, így ma már teljesen magabiztosan sminkelek és javítok érett vagy kifejezetten problémás bőrt is."
     },
     {
       name: "Szabó Júlia",
       role: "Esküvői Sminkes • Kecskemét",
-      title: "Az egyéni figyelem tényleg 100%-os volt.",
-      text: "A maximum 5 fős exkluzív limit miatt Kinga minden egyes ecsetvonásomnál mögöttem állt és közvetlenül javította a tartást és a satírozást. Ez a támogatás hihetetlen gyorsan átlendített az akadályokon."
+      title: "A legcsodásabb mentorprogram, ahol az egyéni figyelem tényleg 100%-os volt.",
+      text: "Nem egy zajos, harmincfős teremben ültünk. A maximum 5 fős exkluzív limit miatt Kinga minden egyes ecsetvonásomnál mögöttem állt és közvetlenül javította a tartást, nyomást és a satírozást. Ez a támogatás hihetetlen gyorsan átlendített az akadályokon."
     }
   ];
 
@@ -35,12 +35,12 @@ export default function AcademyReviews() {
         
         {/* Section Header - Magazine Style */}
         <div className="mb-24 space-y-6">
-          <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block">Wall of Love</span>
+          <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block">Tanulóink Véleményei</span>
           <h2 className="font-serif-lux text-4xl sm:text-5xl lg:text-6xl font-light text-charcoal-800 tracking-tight leading-[1.1]">
-            Tanítványaink <br /><span className="italic">sikertörténetei.</span>
+            Tanítványaink 80%-a <br /><span className="italic">Aktívan a Szakmában Dolgozik és Oktat.</span>
           </h2>
           <p className="text-lg text-charcoal-700/70 font-light max-w-xl">
-            Tanítványaink 80%-a aktívan a szakmában dolgozik. Nézd meg, hogyan építettek karriert a Kingánál megszerzett tudással.
+            Nézd meg, hogyan építettek sikeres karriert az esküvői és divatszakmában a Kingánál megszerzett bajnoki tudással.
           </p>
         </div>
 

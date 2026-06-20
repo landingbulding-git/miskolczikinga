@@ -69,10 +69,13 @@ export default function AcademyFounder() {
             
             <div className="space-y-8 text-charcoal-700/80 font-light text-lg leading-relaxed max-w-2xl">
               <p>
-                Hovorka-Miskolczi Kinga vagyok. Több mint 21 éve foglalkozom professzionális sminkeléssel filmforgatásokon, reklámokban, divatbemutatókon és rangos fashion eseményeken. Közel 10 évig dolgoztam kozmetikusként: a bőrismeret nem kiegészítő a munkámban, hanem az alapja.
+                Hovorka-Miskolczi Kinga vagyok. Több mint 21 éve foglalkozom professzionális sminkeléssel filmforgatásokon, reklámokban, divatbemutatókon, menyasszonyi sminkeken és rangos fashion eseményeken. Közel 10 évig dolgoztam kozmetikusként, mielőtt teljesen a sminkre specializálódtam: a bőrismeret nem kiegészítő a munkámban, hanem az alapja.
               </p>
               <p>
                 Nemzetközi versenyeken háromszoros világbajnoki ezüstérmet és Európa-bajnoki aranyérmet szereztem. Ma már nem versenyző vagyok, hanem hazai és nemzetközi zsűritag és versenyfelkészítő.
+              </p>
+              <p>
+                15 éve oktatok. Számos sminkest képeztem, akik ma már országszerte és külföldön dolgoznak. 
               </p>
             </div>
 
@@ -85,7 +88,7 @@ export default function AcademyFounder() {
             >
               <div className="relative z-10">
                 <p className="font-serif-lux text-xl italic text-cream-100 leading-relaxed">
-                  „Az én nevem és szakmai ajánlásom komoly garanciát jelent a piacon: ha a fotósok vagy prémium esküvői irodák megtudják, hogy nálam tanultál, az egyet jelent azzal, hogy valóban kiemelkedően sminkelsz.”
+                  „Az én nevem és szakmai ajánlásom komoly garanciát jelent a piacon: ha a fotósok, divatszakemberek vagy prémium esküvői irodák megtudják, hogy nálam tanultál, az egyet jelent azzal, hogy valóban kiemelkedően sminkelsz, stabil és logikus technikai alapokkal rendelkezel.”
                 </p>
               </div>
               <div className="absolute top-0 right-0 w-24 h-24 bg-gold-400/10 -z-0" />
@@ -96,7 +99,7 @@ export default function AcademyFounder() {
                 onClick={scrollToForm}
                 className="group relative px-10 py-5 border border-charcoal-800 text-charcoal-800 text-xs font-bold tracking-luxury uppercase overflow-hidden transition-all duration-500 hover:text-cream-100 rounded-none"
               >
-                <span className="relative z-10">Kapcsolatfelvétel Kingával</span>
+                <span className="relative z-10">Jelentkezem Kingához képzésre</span>
                 <div className="absolute inset-0 bg-charcoal-800 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
               </button>
             </div>

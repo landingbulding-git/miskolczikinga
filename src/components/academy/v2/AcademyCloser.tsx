@@ -24,16 +24,48 @@ export default function AcademyCloser() {
     e.preventDefault();
     setError(null);
 
-    if (!name.trim() || !phone.trim() || !email.trim() || !age.trim() || !motivation.trim()) {
-      setError('Kérjük, tölts ki minden kötelező mezőt.');
+    // Simple validation
+    if (!name.trim()) {
+      setError('Kérjük, add meg a teljes nevedet.');
+      return;
+    }
+    if (!phone.trim()) {
+      setError('Kérjük, add meg a telefonszámodat.');
+      return;
+    }
+    if (!email.trim() || !email.includes('@')) {
+      setError('Kérjük, érvényes e-mail címet adj meg.');
+      return;
+    }
+    if (!age.trim()) {
+      setError('Kérjük, add meg az életkorodat.');
+      return;
+    }
+    if (!motivation.trim() || motivation.trim().length < 10) {
+      setError('Kérjük, írd le pár mondatban a motivációdat (legalább 10 karakterben).');
+      return;
+    }
+    if (!agree) {
+      setError('Kérjük, fogadd el az adatkezelési tájékoztatót.');
       return;
     }
 
     setIsSubmitting(true);
+
+    // Simulate elite application submission
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSuccess(true);
     }, 1500);
+  };
+
+  const handleReset = () => {
+    setName('');
+    setPhone('');
+    setEmail('');
+    setAge('');
+    setMotivation('');
+    setIsSuccess(false);
   };
 
   return (
@@ -49,22 +81,23 @@ export default function AcademyCloser() {
             <div className="space-y-6">
               <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block">Jelentkezés a képzésre</span>
               <h2 className="font-serif-lux text-4xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.1]">
-                Válj keresett szakemberré <br /><span className="italic">egy exkluzív közösségben.</span>
+                Ne csak sminkelni tanulj meg. <br /><span className="italic">Válj keresett szakemberré.</span>
               </h2>
             </div>
 
             <p className="text-lg text-cream-100/70 font-light leading-relaxed max-w-xl">
-              A prémium piaci belépéshez hiteles szakmai alapok szükségesek. Ez a 100 órás mentorprogram a legmagasabb szintű gyakorlati logikát adja át.
+              Válj keresett szakemberré egy exkluzív, 5 fős mentorprogramban — drága kezdőcsomagok és rejtett költségek nélkül. A prémium piaci belépéshez hiteles szakmai alapok szükségesek. Ez a 100 órás mentorprogram a legmagasabb szintű gyakorlati logikát adja át, melynek végén az államilag elismert oklevéllel, portfólióval és valódi tudással magabiztosan indíthatod el az önálló karrieredet.
             </p>
 
             <div className="space-y-10 pt-8">
-              <h4 className="text-[11px] font-bold tracking-luxury text-gold-400/60 uppercase">Amit biztosítunk számodra</h4>
+              <h4 className="text-[11px] font-bold tracking-luxury text-gold-400/60 uppercase">Amit az első naptól kapsz</h4>
               <ul className="space-y-6">
                 {[
-                  "Személyes lakásstúdió és teljes anyagbiztosítás",
-                  "Retusált, azonnal bevethető digitális portfólió",
-                  "Állami tanúsítvány Hajas László aláírásával",
-                  "Mentorálás kizárólag kis létszámú csoportban"
+                  "Személyes, privát lakásstúdió: Anyag- és luxustermék-biztosítás",
+                  "Saját fotóstúdió: Retusált, azonnal bevethető digitális portfólió",
+                  "Állami tanúsítvány Hajas László elnöki aláírásával",
+                  "Mentorálás kizárólag kis létszámú csoportban",
+                  "Bekerülsz Kinga ajánlási hálózatába — és divatprogramokra is magával visz"
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-4 text-base text-cream-100/80 font-light">
                     <span className="text-gold-500 font-bold">—</span>
@@ -89,6 +122,7 @@ export default function AcademyCloser() {
                   <div className="space-y-2 border-b border-white/10 pb-8">
                     <h3 className="font-serif-lux text-3xl font-light text-white">Jelentkezési űrlap</h3>
                     <p className="text-[10px] font-bold tracking-luxury text-gold-400 uppercase">Alapozó sminkképzés / 100 óra</p>
+                    <p className="text-xs text-cream-100/40 font-light mt-2 italic">Küldd be motivációdat és adataidat, Kinga személyesen értékel minden jelentkezést.</p>
                   </div>
 
                   {error && (
@@ -104,7 +138,7 @@ export default function AcademyCloser() {
                           value={name}
                           onChange={(e) => setName(e.target.value)}
                           className="w-full bg-transparent border-b border-white/20 py-4 text-sm focus:outline-none focus:border-gold-400 transition-colors placeholder:text-cream-100/20"
-                          placeholder="TELJES NÉV"
+                          placeholder="TELJES NÉV *"
                         />
                       </div>
                       {/* Phone */}
@@ -114,7 +148,7 @@ export default function AcademyCloser() {
                           value={phone}
                           onChange={(e) => setPhone(e.target.value)}
                           className="w-full bg-transparent border-b border-white/20 py-4 text-sm focus:outline-none focus:border-gold-400 transition-colors placeholder:text-cream-100/20"
-                          placeholder="TELEFONSZÁM"
+                          placeholder="TELEFONSZÁM *"
                         />
                       </div>
                     </div>
@@ -127,7 +161,7 @@ export default function AcademyCloser() {
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
                           className="w-full bg-transparent border-b border-white/20 py-4 text-sm focus:outline-none focus:border-gold-400 transition-colors placeholder:text-cream-100/20"
-                          placeholder="E-MAIL CÍM"
+                          placeholder="E-MAIL CÍM *"
                         />
                       </div>
                       {/* Age */}
@@ -137,7 +171,7 @@ export default function AcademyCloser() {
                           value={age}
                           onChange={(e) => setAge(e.target.value)}
                           className="w-full bg-transparent border-b border-white/20 py-4 text-sm focus:outline-none focus:border-gold-400 transition-colors placeholder:text-cream-100/20"
-                          placeholder="ÉLETKOR"
+                          placeholder="ÉLETKOR *"
                         />
                       </div>
                     </div>
@@ -145,11 +179,11 @@ export default function AcademyCloser() {
                     {/* Motivation */}
                     <div className="relative group">
                       <textarea
-                        rows={3}
+                        rows={4}
                         value={motivation}
                         onChange={(e) => setMotivation(e.target.value)}
-                        className="w-full bg-transparent border-b border-white/20 py-4 text-sm focus:outline-none focus:border-gold-400 transition-colors placeholder:text-cream-100/20 resize-none"
-                        placeholder="ÍRD LE PÁR MONDATBAN A MOTIVÁCIÓDAT..."
+                        className="w-full bg-transparent border-b border-white/20 py-4 text-sm focus:outline-none focus:border-gold-400 transition-colors placeholder:text-cream-100/20 resize-none leading-relaxed"
+                        placeholder="ÍRD LE PÁR MONDATBAN A MOTIVÁCIÓDAT: MIÉRT SZERETNÉL PROFI SMINKESSÉ VÁLNI ÉS MIT CSINÁLTÁL EDDIG? *"
                       />
                     </div>
 
@@ -162,17 +196,21 @@ export default function AcademyCloser() {
                           className="mt-1 accent-gold-400 h-4 w-4 shrink-0 bg-transparent border-white/20"
                         />
                         <span className="text-[11px] text-cream-100/40 font-light leading-relaxed uppercase tracking-widest group-hover:text-cream-100 transition-colors">
-                          Elfogadom az adatkezelési tájékoztatót.
+                          Elfogadom az adatkezelési tájékoztatót és hozzájárulok a jelentkezésem feldolgozásához.
                         </span>
                       </label>
 
                       <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="group relative w-full py-6 bg-gold-500 text-charcoal-900 text-xs font-bold tracking-luxury uppercase overflow-hidden transition-all duration-500 hover:bg-gold-400 rounded-none"
+                        className="group relative w-full py-6 bg-gold-500 text-charcoal-900 text-xs font-bold tracking-luxury uppercase overflow-hidden transition-all duration-500 hover:bg-gold-400 rounded-none shadow-xl"
                       >
-                        <span className="relative z-10">{isSubmitting ? 'Feldolgozás...' : 'Jelentkezés küldése'}</span>
+                        <span className="relative z-10">{isSubmitting ? 'JELENTKEZÉS FELDOLGOZÁSA...' : 'KÜLDÖM A JELENTKEZÉSEM ÉS A MOTIVÁCIÓMAT'}</span>
                       </button>
+
+                      <p className="text-[10px] text-cream-100/30 font-light leading-relaxed text-center italic">
+                        🔒 Az űrlap kitöltése után egy automatikus megerősítő e-mailt kapsz a helyfoglaláshoz szükséges számlaszámmal.
+                      </p>
                     </div>
                   </form>
                 </motion.div>
@@ -184,17 +222,17 @@ export default function AcademyCloser() {
                   className="py-20 text-center space-y-8 border border-white/10"
                 >
                   <div className="space-y-4">
-                    <h3 className="font-serif-lux text-4xl font-light text-white">Köszönjük.</h3>
-                    <p className="text-xs text-gold-400 uppercase tracking-luxury">Jelentkezésedet rögzítettük.</p>
+                    <h3 className="font-serif-lux text-4xl font-light text-white">Gratulálunk!</h3>
+                    <p className="text-xs text-gold-400 uppercase tracking-luxury">Jelentkezésedet sikeresen rögzítettük.</p>
                   </div>
-                  <p className="text-sm text-cream-100/60 font-light max-w-xs mx-auto leading-relaxed">
-                    Kinga 24 órán belül személyesen keresni fog a megadott telefonszámon.
+                  <p className="text-sm text-cream-100/60 font-light max-w-sm mx-auto leading-relaxed">
+                    Kinga 24 órán belül személyesen hívni fog a megadott számon a tervezéssel kapcsolatban. Küldtünk egy automatikus tájékoztató levelet e-mail fiókodba a heti órarenddel és a banki adatokkal.
                   </p>
                   <button
-                    onClick={() => setIsSuccess(false)}
+                    onClick={handleReset}
                     className="text-[10px] font-bold tracking-luxury text-white/40 uppercase hover:text-white transition-colors"
                   >
-                    Vissza az űrlaphoz
+                    Új Jelentkezés leadása
                   </button>
                 </motion.div>
               )}

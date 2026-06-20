@@ -24,28 +24,34 @@ export default function AcademyOtherCourses() {
     {
       badge: "Mesterképzés",
       title: "Haladó anyag- és formatechnikai mesterprogram",
-      description: "Ez a 60 órás képzés a tiszta technikáról szól. Megtanulod az Aqua, Tinta, Gel és Cut Crease rejtelmeit, valamint a látványos színpadi és kreatív elemek magabiztos használatát.",
+      description: "Ez a 60 órás képzés nem a modellekről, hanem a tiszta technikáról szól. Megtanulod az Aqua, Tinta, Gel és Cut Crease rejtelmeit, a Color Smokey-t, valamint a látványos színpadi és kreatív elemek (csillámok, kövek, tollak) magabiztos használatát.",
+      spots: "csak 5 elérhető hely maradt",
       details: [
-        { label: "Időtartam", value: "60 óra" },
-        { label: "Létszám", value: "Max. 5 fő" }
+        { label: "Időtartam", value: "60 óra (10 alkalom × 6 óra)" },
+        { label: "Létszám", value: "Max. 5 fő" },
+        { label: "Feltétel", value: "Sminkes előképzettség" }
       ]
     },
     {
       badge: "Versenyfelkészítés",
       title: "Személyre szabott, egyéni bajnoki mentorprogram",
-      description: "Privát felkészítés Kinga több mint 100 élő versenyének tapasztalatával. Legalább 3 személyes találkozón vezetünk végig a pontos téma meghatározásától a versenymunkáig.",
+      description: "Teljesen egyéni, privát felkészítés Kinga több mint 100 élő versenyének tapasztalatával. Körülbelül 2 hónappal a verseny előtt kezdünk: legalább 3 személyes találkozón vezetünk végig a pontos téma meghatározásától és a modell kiválasztásától a begyakorláson át a kimagasló, gyors versenymunkáig.",
+      spots: "csak 1 elérhető hely maradt",
       details: [
         { label: "Időkeret", value: "2 hónap" },
-        { label: "Formátum", value: "Privát" }
+        { label: "Formátum", value: "Privát, egyéni felkészítés" },
+        { label: "Feltétel", value: "Sminkes előképzettség" }
       ]
     },
     {
-      badge: "Privát Kurzus",
-      title: "Személyre szabott önsminkelési mesterkurzus",
-      description: "3 órás tanácsadás nőknek, akik szeretnének magabiztos hétköznapi sminket készíteni maguknak. Átvesszük a bőrápolást, az arcformádat, majd jön a közös gyakorlat.",
+      badge: "Exkluzív smink tanácsadás",
+      title: "3 órás privát önsminkelési mesterkurzus",
+      description: "3 órás személyre szabott tanácsadás nőknek, akik szeretnének magabiztos hétköznapi vagy alkalmi sminket készíteni maguknak. Átvesszük a helyes bőrápolást, az arcformádat, kiszelektáljuk a neszesszeredet, majd jön a közös gyakorlat: az arcod egyik felét Kinga készíti el, a másikat te magad fested meg lépésről lépésre.",
+      spots: "1 elérhető hely maradt",
       details: [
         { label: "Időtartam", value: "3 óra" },
-        { label: "Létszám", value: "Egyéni" }
+        { label: "Létszám", value: "1 fő (vagy max. 2-3 barátnő)" },
+        { label: "Eredmény", value: "Saját, egyedi sminkrutin" }
       ]
     }
   ];
@@ -56,12 +62,12 @@ export default function AcademyOtherCourses() {
         
         {/* Section Header */}
         <div className="mb-24 space-y-6">
-          <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block">Fejlődj tovább Kingával</span>
+          <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block">FEJLŐDJ TOVÁBB KINGÁVAL</span>
           <h2 className="font-serif-lux text-4xl sm:text-5xl lg:text-6xl font-light text-charcoal-800 tracking-tight leading-[1.1]">
-            További képzések <br /><span className="italic">a stúdióban.</span>
+            További Képzéseim <br /><span className="italic">a stúdióban.</span>
           </h2>
-          <p className="text-lg text-charcoal-700/70 font-light max-w-xl">
-            Legyél akár ambiciózus kezdő vagy versenyre készülő profi — fedezd fel speciális mentorprogramjaimat.
+          <p className="text-lg text-charcoal-700/70 font-light max-w-xl leading-relaxed">
+            Legyél akár ambiciózus kezdő, versenyre készülő profi, vagy egyszerűen önmagad legszebb arcát kereső nő — fedezd fel speciális mentorprogramjaimat.
           </p>
         </div>
 
@@ -97,13 +103,18 @@ export default function AcademyOtherCourses() {
                 ))}
               </div>
 
-              <div className="pt-6">
+              <div className="pt-6 space-y-4">
                 <button
                   onClick={() => handleApplyClick(course.title)}
                   className="w-full py-4 border border-charcoal-800/10 text-[11px] font-bold tracking-luxury text-charcoal-800 uppercase hover:bg-charcoal-800 hover:text-cream-100 transition-all duration-500"
                 >
                   Részletek és jelentkezés
                 </button>
+                <div className="text-center">
+                  <span className="text-[9px] font-bold tracking-widest text-rose-500 uppercase italic">
+                    ⚠️ {course.spots}
+                  </span>
+                </div>
               </div>
             </motion.div>
           ))}

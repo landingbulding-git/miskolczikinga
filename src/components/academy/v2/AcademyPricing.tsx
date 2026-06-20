@@ -17,9 +17,9 @@ export default function AcademyPricing() {
   const inclusions = [
     "10 héten át tartó, 100 órás rendkívül intenzív, gyakorlat-orientált élő oktatás",
     "Korlátlan luxus & prémium anyaghasználat (M·A·C, Inglot, Makeup Forever stb.)",
-    "Államilag elismert szakmai tanúsitvány Hajas László aláírásával",
+    "Felnőttképzési regisztrációs számmal ellátott, a Magyar Fodrász-Kozmetikus-Körmös Egyesület pecsétjével és Hajas László aláírásával hitelesített, államilag elismert szakmai tanúsítvány",
     "Kizárólag kis létszámú, elit csoportos mentorálás",
-    "Online pótlási lehetőség és visszanézhető órák zárt csoportban"
+    "Online pótlási lehetőség: Hiányzás esetén élő videós közvetítés és visszanézhető órák egy zárt Facebook-csoportban."
   ];
 
   const bonuses = [
@@ -41,7 +41,7 @@ export default function AcademyPricing() {
             Transzparens árazás, <br /><span className="italic">rejtett költségek nélkül.</span>
           </h2>
           <p className="text-lg text-charcoal-700/70 font-light max-w-xl leading-relaxed">
-            Nálunk nincsenek kötelező kezdőcsomagok. Egyetlen, mindenre kiterjedő díjért mindent megkapsz a sikeres induláshoz.
+            Nálunk nincsenek kötelező kezdőcsomagok és kötelezően megvásárolandó sminkkészletek. Egyetlen, magába foglaló, részletekben is fizethető díjért mindent megkapsz a sikeres induláshoz.
           </p>
         </div>
 
@@ -68,7 +68,7 @@ export default function AcademyPricing() {
                   Pro Makeup Mentorprogram
                 </h3>
                 <p className="text-[10px] font-bold tracking-luxury text-charcoal-700/40 uppercase">
-                  100 órás, 10 hetes elit csoportos képzés
+                  100 órás, 10 hetes elit csoportos gyakorlat-fókuszú képzés
                 </p>
               </div>
 
@@ -93,7 +93,7 @@ export default function AcademyPricing() {
               {/* Inclusions */}
               <div className="space-y-10">
                 <div className="space-y-6">
-                  <h4 className="text-[11px] font-bold tracking-luxury text-charcoal-800 uppercase">A program tartalma</h4>
+                  <h4 className="text-[11px] font-bold tracking-luxury text-charcoal-800 uppercase">A program teljes tartalma az első naptól</h4>
                   <ul className="space-y-4">
                     {inclusions.map((item, idx) => (
                       <li key={idx} className="flex items-start gap-4 text-base text-charcoal-700/80 font-light leading-relaxed">
@@ -105,7 +105,7 @@ export default function AcademyPricing() {
                 </div>
 
                 <div className="space-y-6">
-                  <h4 className="text-[11px] font-bold tracking-luxury text-gold-600 uppercase italic">Ajándék bónuszok</h4>
+                  <h4 className="text-[11px] font-bold tracking-luxury text-gold-600 uppercase italic">Exkluzív ajándék bónuszok (0 Ft plusz költséggel)</h4>
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {bonuses.map((bonus, idx) => (
                       <li key={idx} className="flex items-center gap-3 text-sm text-charcoal-800 font-medium">
@@ -122,10 +122,10 @@ export default function AcademyPricing() {
                   onClick={scrollToForm}
                   className="w-full bg-charcoal-800 text-cream-100 text-xs font-bold tracking-luxury uppercase py-6 transition-all duration-500 hover:bg-charcoal-700 rounded-none shadow-xl"
                 >
-                  Jelentkezés a képzésre
+                  Jelentkezem Kingához képzésre
                 </button>
                 <p className="text-center text-[10px] text-charcoal-700/40 uppercase tracking-[0.2em] mt-6">
-                  Helyfoglalás a 10% előleg beérkezése után válik véglegessé.
+                  🔒 A helyfoglalás a 10% előleg beérkezése után válik 100% véglegessé.
                 </p>
               </div>
             </div>
@@ -140,11 +140,11 @@ export default function AcademyPricing() {
                 {[
                   {
                     name: "Nagy Melinda",
-                    text: "Soha életemben nem hoztam ennél jobb döntést. Már tanulás közben megtérült a tanfolyam. Nemcsak festeni, hanem vállalkozást építeni is megtanultam."
+                    text: "„Soha életemben nem hoztam ennél jobb döntést. Már tanulás közben megtérült a tanfolyam. Nemcsak festeni, hanem vállalkozást építeni, karaktert olvasni és vendéget megtartani is megtanultam. Az esküvői szezonban már teli volt a naptáram Szeged és Budapest környékén.”"
                   },
                   {
                     name: "Szabó Eszter",
-                    text: "Már a képzés 6. hetén saját munkákból kerestem meg az árát! Kinga professzionalizmusa teljesen magával ragadott."
+                    text: "„Már a képzés 6. hetén saját munkákból kerestem meg az árát! Úgy érkeztem ide, hogy csak az alapokat akartam tudni, de Kinga energiája és professzionalizmusa teljesen magával ragadott. Amikor a modulok végén elkészültek a profi, retusált képek a modelljeimről és kitettem őket, azonnal jöttek az első felkérések.”"
                   }
                 ].map((review, idx) => (
                   <motion.div 
@@ -156,7 +156,7 @@ export default function AcademyPricing() {
                     className="space-y-4"
                   >
                     <p className="font-serif-lux text-xl italic text-charcoal-800 leading-relaxed">
-                      „{review.text}”
+                      {review.text}
                     </p>
                     <p className="text-[10px] font-bold tracking-luxury text-gold-600 uppercase">— {review.name}</p>
                   </motion.div>
@@ -166,10 +166,28 @@ export default function AcademyPricing() {
 
             {/* Guarantee Section - Refined */}
             <div className="pt-16 border-t border-charcoal-800/10 space-y-8">
-              <h4 className="text-[11px] font-bold tracking-luxury text-charcoal-800 uppercase italic">Gyakorlati Garancia</h4>
-              <p className="text-sm text-charcoal-700/70 font-light leading-relaxed">
-                Addig támogatlak minden technikai elakadásnál, amíg el nem érjük a sikert. A célom, hogy olyan szakmai alapot kapj, amellyel magabiztosan érvényesülsz a piacon.
-              </p>
+              <h4 className="text-[11px] font-bold tracking-luxury text-charcoal-800 uppercase italic">100%-os Gyakorlati Garancia</h4>
+              <div className="space-y-6">
+                {[
+                  {
+                    title: "Személyes szakmai garancia:",
+                    desc: "Ha elkötelezetten látogatod az órákat és beleteszed a szükséges szorgalmat, addig támogatlak minden technikai elakadásnál, amíg el nem érjük a sikert."
+                  },
+                  {
+                    title: "Szigorú szakmai korlát:",
+                    desc: "Addig senkit nem engedek záróvizsgára, amíg nem látom rajta a kitartó gyakorlást, és azt, hogy képes profi szinten, önállóan sminkelni."
+                  },
+                  {
+                    title: "Biztos piaci belépő:",
+                    desc: "Ennek a maximalizmusnak köszönhető, hogy a tanulóim 80%-a ma is a szakmából él vagy oktat – a nálam megszerzett alapok azonnali ajánlólevelet jelentenek a piacon."
+                  }
+                ].map((item, idx) => (
+                  <div key={idx} className="space-y-2">
+                    <p className="text-sm text-charcoal-800 font-bold uppercase tracking-widest">{item.title}</p>
+                    <p className="text-sm text-charcoal-700/70 font-light leading-relaxed">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
               <div className="flex gap-4">
                 <div className="w-1 h-1 rounded-full bg-gold-400" />
                 <div className="w-1 h-1 rounded-full bg-gold-400" />

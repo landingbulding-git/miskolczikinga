@@ -17,32 +17,37 @@ export default function AcademyFAQ() {
     {
       id: 'fa1',
       question: 'Nincs sminkes előképzettségem. Nekem való ez a képzés?',
-      answer: 'Igen. A feltétel nem az előképzettség, hanem az elhivatottság. Az alapoktól indulunk, de az ütem lehetővé teszi, hogy 10 hét alatt piacképes tudással kerülj ki.'
+      answer: 'Igen. A feltétel nem az előképzettség, hanem az elhivatottság. Az első naptól az alapoktól indulunk, de az ütem és a szint azt teszi lehetővé, hogy 10 hét alatt piacképes tudással kerülj ki. Kinga személyesen szűri a jelentkezőket — hogy biztosan csak komoly, fejlődni vágyó emberek kerüljenek a csoportba.'
     },
     {
       id: 'fa2',
       question: 'Mi a garancia, hogy utána munkát kapok?',
-      answer: 'Portfóliót, állami tanúsítványt és Kinga személyes ajánlását adjuk. A végzett tanítványaink 80%-a aktívan dolgozik a szakmában. A többi rajtad múlik, de az eszközöket garantáltan megkapod.'
+      answer: 'Munkát nem ígérünk — portfóliót, állami tanúsítványt és Kinga személyes ajánlását igen. A végzett tanítványaink 80%-a aktívan dolgozik a szakmában. Az ajánlási hálózatba automatikusan bekerülsz: ha valaki sminkest keres, Kinga téged ajánl. A többi rajtad múlik — de az eszközöket garantáltan megkapod.'
     },
     {
       id: 'fa3',
-      question: 'Mi történik, ha lemaradok egy alkalomról?',
-      answer: 'Online pótlási lehetőséget biztosítunk zárt csoportban, visszanézhető órákkal. A kis létszám miatt a pótlás egyénileg is rugalmasan kezelhető.'
+      question: 'Mi történik, ha betegség vagy utazás miatt lemaradok egy alkalomról?',
+      answer: 'Online pótlási lehetőség: Hiányzás esetén élő videós közvetítés és visszanézhető órák egy zárt Facebook-csoportban. A kis létszám miatt a pótlás egyénileg is kezelhető.'
     },
     {
       id: 'fa4',
-      question: 'Nekem kell biztosítanom a modelleket?',
-      answer: 'Nem kötelező. Kinga segít modelleket találni a gyakorlati órákhoz és a portfóliófotózáshoz is. Semmiben nem maradsz le, ha nincs saját modelled.'
+      question: 'Nekem kell biztosítanom a modelleket az órákra?',
+      answer: 'Nem kötelező. Kinga segít modelleket találni, és a portfóliófotózáshoz is biztosítanak modellt. Ha nem találsz senkit, nem maradsz le semmit.'
     },
     {
       id: 'fa5',
-      question: 'Milyen oklevelet kapok a tanfolyam végén?',
-      answer: 'Hivatalos, államilag elismert szakmai tanúsítványt, Hajas László elnök aláírásával és az MFKKE pecsétjével hitelesítve.'
+      question: 'Mi van, ha nem teljesítem a záróvizsgát?',
+      answer: 'Kinga addig tartja a kezed, amíg el nem éred a szintet. Egyetlen tanítványát sem engedte ki záróvizsgára, aki nem állt készen — és egyet sem hagyott el az úton. A biztonsági ismétlési lehetőség ezt garantálja.'
     },
     {
       id: 'fa6',
-      question: 'Lehetséges a részletfizetés?',
-      answer: 'Igen. A helyfoglalás a 10%-os előleggel zárul, a fennmaradó összeg pedig 3 kamatmentes részletben is fizethető.'
+      question: 'Milyen hivatalos oklevelet kapok a tanfolyam végén?',
+      answer: 'Felnőttképzési regisztrációs számmal ellátott, a Magyar Fodrász-Kozmetikus-Körmös Egyesület pecsétjével és Hajas László elnök aláírásával hitelesített, államilag elismert szakmai tanúsítványt. Ezt a fotósok, divatirodák és esküvőszervezők azonnal ismerik.'
+    },
+    {
+      id: 'fa7',
+      question: 'Lehetséges a képzési díjat részletekben fizetni?',
+      answer: 'Igen. A helyfoglalás a 10%-os előleg beérkezésével zárul. A maradék összeg 3 részletben, kamat nélkül fizethető (3 × 330 000 Ft).'
     }
   ];
 
@@ -52,9 +57,9 @@ export default function AcademyFAQ() {
         
         {/* Section Header */}
         <div className="mb-24 space-y-6">
-          <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block">Gyakori kérdések</span>
+          <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block">GYIK</span>
           <h2 className="font-serif-lux text-4xl sm:text-5xl lg:text-6xl font-light text-charcoal-800 tracking-tight leading-[1.1]">
-            Részletek, <br /><span className="italic">amikre szükséged lehet.</span>
+            Kérdésed van? <br /><span className="italic">Talán itt rögtön megtalálod.</span>
           </h2>
         </div>
 
