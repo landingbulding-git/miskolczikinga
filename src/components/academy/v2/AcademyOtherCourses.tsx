@@ -25,7 +25,7 @@ export default function AcademyOtherCourses() {
       badge: "Mesterképzés",
       title: "Haladó anyag- és formatechnikai mesterprogram",
       description: "Ez a 60 órás képzés nem a modellekről, hanem a tiszta technikáról szól. Megtanulod az Aqua, Tinta, Gel és Cut Crease rejtelmeit, a Color Smokey-t, valamint a látványos színpadi és kreatív elemek (csillámok, kövek, tollak) magabiztos használatát.",
-      spots: "csak 5 elérhető hely maradt",
+      spots: "5 elérhető hely maradt!",
       details: [
         { label: "Időtartam", value: "60 óra (10 alkalom × 6 óra)" },
         { label: "Létszám", value: "Max. 5 fő" },
@@ -36,7 +36,7 @@ export default function AcademyOtherCourses() {
       badge: "Versenyfelkészítés",
       title: "Személyre szabott, egyéni bajnoki mentorprogram",
       description: "Teljesen egyéni, privát felkészítés Kinga több mint 100 élő versenyének tapasztalatával. Körülbelül 2 hónappal a verseny előtt kezdünk: legalább 3 személyes találkozón vezetünk végig a pontos téma meghatározásától és a modell kiválasztásától a begyakorláson át a kimagasló, gyors versenymunkáig.",
-      spots: "csak 1 elérhető hely maradt",
+      spots: "1 elérhető hely maradt!",
       details: [
         { label: "Időkeret", value: "2 hónap" },
         { label: "Formátum", value: "Privát, egyéni felkészítés" },
@@ -47,7 +47,7 @@ export default function AcademyOtherCourses() {
       badge: "Exkluzív smink tanácsadás",
       title: "3 órás privát önsminkelési mesterkurzus",
       description: "3 órás személyre szabott tanácsadás nőknek, akik szeretnének magabiztos hétköznapi vagy alkalmi sminket készíteni maguknak. Átvesszük a helyes bőrápolást, az arcformádat, kiszelektáljuk a neszesszeredet, majd jön a közös gyakorlat: az arcod egyik felét Kinga készíti el, a másikat te magad fested meg lépésről lépésre.",
-      spots: "1 elérhető hely maradt",
+      spots: "1 elérhető hely maradt!",
       details: [
         { label: "Időtartam", value: "3 óra" },
         { label: "Létszám", value: "1 fő (vagy max. 2-3 barátnő)" },
@@ -57,11 +57,11 @@ export default function AcademyOtherCourses() {
   ];
 
   return (
-    <section className="py-32 md:py-48 bg-cream-100 overflow-hidden border-t border-charcoal-800/5">
+    <section className="py-20 md:py-24 bg-cream-100 overflow-hidden border-t border-charcoal-800/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="mb-24 space-y-6">
+        <div className="mb-16 space-y-6">
           <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block">FEJLŐDJ TOVÁBB KINGÁVAL</span>
           <h2 className="font-serif-lux text-4xl sm:text-5xl lg:text-6xl font-light text-charcoal-800 tracking-tight leading-[1.1]">
             További Képzéseim <br /><span className="italic">a stúdióban.</span>
@@ -72,7 +72,7 @@ export default function AcademyOtherCourses() {
         </div>
 
         {/* 3-Column Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 lg:gap-24">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
           {courses.map((course, idx) => (
             <motion.div
               key={idx}
@@ -111,9 +111,9 @@ export default function AcademyOtherCourses() {
                   Részletek és jelentkezés
                 </button>
                 <div className="text-center">
-                  <span className="text-[9px] font-bold tracking-widest text-rose-500 uppercase italic">
-                    ⚠️ {course.spots}
-                  </span>
+                  <p className="text-xs text-charcoal-700/60 italic font-serif-lux tracking-wide">
+                    {course.spots}
+                  </p>
                 </div>
               </div>
             </motion.div>
