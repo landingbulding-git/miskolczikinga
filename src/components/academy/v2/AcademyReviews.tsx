@@ -52,7 +52,7 @@ export default function AcademyReviews() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: idx * 0.1 }}
-              className="group space-y-6 relative"
+              className="group space-y-6 relative border border-charcoal-800/5 p-8 lg:p-10 bg-white/50"
             >
               {/* Subtle Quote Watermark */}
               <Quote className="absolute -top-4 -left-4 w-10 h-10 text-charcoal-800/5 group-hover:text-gold-400/10 transition-colors duration-500" />

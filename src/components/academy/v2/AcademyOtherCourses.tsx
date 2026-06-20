@@ -80,7 +80,7 @@ export default function AcademyOtherCourses() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: idx * 0.1 }}
-              className="flex flex-col h-full space-y-8 group"
+              className="flex flex-col h-full space-y-8 group border border-charcoal-800/5 p-8 lg:p-10 bg-white/50"
             >
               <div className="space-y-4">
                 <span className="text-[10px] font-bold tracking-luxury text-gold-600/60 uppercase">
