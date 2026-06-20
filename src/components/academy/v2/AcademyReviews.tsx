@@ -77,19 +77,6 @@ export default function AcademyReviews() {
             </motion.div>
           ))}
         </div>
-
-        {/* Museum Moment / Social Evidence */}
-        <div className="mt-20 pt-16 border-t border-charcoal-800/5 text-center">
-          <div className="inline-flex flex-wrap justify-center items-center gap-x-12 gap-y-6 opacity-30 grayscale hover:opacity-60 transition-opacity duration-1000">
-            <span className="font-serif-lux text-lg tracking-[0.2em] font-bold uppercase">Magyarország Szépe</span>
-            <span className="font-serif-lux text-lg tracking-[0.2em] font-bold uppercase">Fashion Week</span>
-            <span className="font-serif-lux text-lg tracking-[0.2em] font-bold uppercase">Nők Lapja</span>
-          </div>
-          <p className="text-[10px] font-bold tracking-luxury text-charcoal-700/30 uppercase mt-6">
-            Események, ahol diákjaink Kinga mellett bizonyíthattak
-          </p>
-        </div>
-
       </div>
     </section>
   );
