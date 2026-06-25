@@ -20,15 +20,14 @@ export default function Closer() {
   ];
 
   return (
-    <section className="py-20 md:py-24 bg-cream-100 border-t border-cream-300 relative overflow-hidden" id="lead-form-anchor">
-      {/* Background accent */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(181,149,85,0.08),transparent_50%)]"></div>
+    <section id="lead-form-anchor" className="py-16 md:py-24 bg-charcoal-800 text-cream-100 overflow-hidden relative">
+      {/* Editorial background element */}
+      <div className="absolute top-0 right-0 w-1/3 h-full bg-charcoal-900/30 -skew-x-12 transform translate-x-1/4 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          
-          {/* LEFT: Closer copy & value stack */}
-          <div className="lg:col-span-6 space-y-8">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 items-start">
+          {/* Left Column - Editorial Content */}
+          <div className="lg:w-1/2 space-y-8">
             <div className="space-y-4">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-900/10 border border-gold-400/30 text-amber-900 text-xs rounded-full font-mono font-bold tracking-wider uppercase">
                 <AlertCircle className="w-3.5 h-3.5" />
