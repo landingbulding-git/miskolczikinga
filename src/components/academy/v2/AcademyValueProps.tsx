@@ -261,7 +261,7 @@ export default function AcademyValueProps() {
                   >
                     <div className="aspect-square">
                       <img
-                        src={`https://images.unsplash.com/photo-${1550355291${item < 10 ? '09' : item}-a90fb38ba796}?auto=format&fit=crop&q=80&w=300`}
+                        src={`https://images.unsplash.com/photo-155035529109-a90fb38ba796?auto=format&fit=crop&q=80&w=300&h=300`}
                         alt={`Résztvevő portfólió ${item}`}
                         className="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
                       />
