@@ -80,7 +80,7 @@ export default function Founder() {
                 Személyes Garancia Az Arcodra
               </div>
               
-              <h2 className="font-serif-lux text-3xl sm:text-4xl lg:text-5xl font-medium text-charcoal-900 tracking-tight leading-tight">
+              <h2 className="font-serif-lux text-3xl sm:text-4xl lg:text-5xl font-light text-charcoal-800 tracking-tight leading-tight">
                 15 év nemzetközi bajnoki tapasztalat, amely a Te arcod biztonságát garantálja.
               </h2>
               <div className="h-0.5 w-16 bg-gold-400" />

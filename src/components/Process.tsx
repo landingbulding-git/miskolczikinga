@@ -52,7 +52,7 @@ export default function Process() {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-20 space-y-4">
           <span className="text-xs font-mono font-bold tracking-widest text-gold-600 uppercase block">Egyszerű & Átlátható Út</span>
-          <h2 className="font-serif-lux text-3.5xl sm:text-5xl font-medium text-charcoal-900 tracking-tight leading-tight">
+          <h2 className="font-serif-lux text-3.5xl sm:text-5xl font-light text-charcoal-800 tracking-tight leading-tight">
             Érd el a 24/7 természetes szépséget 3 egyszerű lépésben.
           </h2>
           <div className="h-0.5 w-12 bg-gold-400 mx-auto" />

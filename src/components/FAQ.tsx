@@ -61,7 +61,7 @@ export default function FAQ() {
             <ShieldQuestion className="w-3.5 h-3.5 text-gold-500 shrink-0" />
             Gyakori Kérdések & Kifogások
           </div>
-          <h2 className="font-serif-lux text-3xl sm:text-5xl font-medium text-charcoal-900 tracking-tight leading-tight">
+          <h2 className="font-serif-lux text-3xl sm:text-5xl font-light text-charcoal-800 tracking-tight leading-tight">
            Felmerült benned egy kérdés? Talán itt megtalálod rá a választ:
           </h2>
           <div className="h-0.5 w-12 bg-gold-400 mx-auto" />

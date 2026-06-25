@@ -78,7 +78,7 @@ export default function Reviews() {
   ];
 
   return (
-    <section className="py-24 bg-cream-50 relative overflow-hidden">
+    <section className="py-24 bg-cream-100 relative overflow-hidden">
       {/* Background ambient light */}
       <div className="absolute bottom-1/4 -left-32 w-80 h-80 bg-gold-200/5 rounded-full blur-[90px] pointer-events-none" />
 
@@ -90,7 +90,7 @@ export default function Reviews() {
             <MessageSquareQuote className="w-3 shrink-0" />
             Vendégeim Írták
           </div>
-          <h2 className="font-serif-lux text-3.5xl sm:text-5xl font-medium text-charcoal-900 tracking-tight leading-tight">
+          <h2 className="font-serif-lux text-3.5xl sm:text-5xl font-light text-charcoal-800 tracking-tight leading-tight">
             Több ezer nő döntött a mindennapi időszuverenitás és a biztonság mellett.
           </h2>
           <div className="h-0.5 w-12 bg-gold-400 mx-auto" />

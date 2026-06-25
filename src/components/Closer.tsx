@@ -35,7 +35,7 @@ export default function Closer() {
                 <AlertCircle className="w-3.5 h-3.5" />
                 Korlátozott Szabad Helyek
               </span>
-              <h2 className="font-serif-lux text-3.5xl sm:text-5xl font-medium text-charcoal-900 tracking-tight leading-tight">
+              <h2 className="font-serif-lux text-3.5xl sm:text-5xl font-light text-charcoal-800 tracking-tight leading-tight">
                 Biztosítsd be az időtlen szépséget és időszuverenitást, amíg még vannak szabad helyeim.
               </h2>
               <div className="h-0.5 w-16 bg-gold-400" />
