@@ -18,11 +18,11 @@ export default function HomeCaseStudies() {
     },
     {
       id: 2,
-      title: '[PLACEHOLDER - Esettanulmány 2]',
-      who: '[Ki - Híresség vagy leírás]',
-      occasion: '[Alkalom]',
-      challenge: '[A kihívás]',
-      solution: '[Hogyan oldottuk meg - 2-3 mondat Kinga saját szavaival]'
+      title: 'Fotós Workshop — Párizs, Két Modell, Egy Vizuális Harmónia',
+      who: 'Balogh Eleni (Miss Balaton)',
+      occasion: 'Egy párizsi fotós workshop, ahol a párjával közösen modellkedtek',
+      challenge: 'Egy fotós workshopon a sminknek egyszerre kell ellenállnia a stúdiófények és a külső helyszínek megpróbáltatásainak, miközben egy Miss Balaton győztes esetében elvárás a magazin-kompatibilis, nemzetközi szintű prémium elegancia.',
+      solution: 'Egy olyan tartós, high-end fotósminket építettem fel Eleni arc-architectúrájára, amely a vaku villanásánál és természetes fényben is tökéletesen texturált maradt a kamerák előtt. A természetes adottságait emeltem ki ahelyett, hogy elfedtem volna azokat, így a szerelmével közös képeken egy végtelenül elegáns, tiszta és sugárzó vizuális harmóniát tudtunk teremteni.'
     },
     {
       id: 3,
