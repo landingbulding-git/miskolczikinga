@@ -147,23 +147,37 @@ export default function AcademyValueProps() {
             <p className="text-[10px] font-bold tracking-luxury text-charcoal-700/40 uppercase text-center mb-10">
               Képek korábbi résztvevők portfólióiból
             </p>
-            <div className="flex flex-nowrap overflow-x-auto gap-4 pb-4">
-              {[1, 2, 3, 4, 5, 6].map((item) => (
-                <motion.div
-                  key={item}
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: item * 0.1 }}
-                  className="flex-shrink-0 w-32 h-32 group relative overflow-hidden rounded-sm shadow-md bg-charcoal-900"
-                >
-                  <img
-                    src={`https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&q=80&w=150&h=150&crop=faces`}
-                    alt={`Portfólió ${item}`}
-                    className="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 transition-all duration-500"
-                  />
-                </motion.div>
-              ))}
+            <div className="overflow-hidden">
+              <style>{`
+                @keyframes scroll-left {
+                  0% {
+                    transform: translateX(0);
+                  }
+                  100% {
+                    transform: translateX(-50%);
+                  }
+                }
+                .portfolio-scroll {
+                  animation: scroll-left 30s linear infinite;
+                  will-change: transform;
+                }
+              `}</style>
+              <div className="flex gap-4 portfolio-scroll">
+                {[...Array(2)].map((_, loop) =>
+                  [1, 2, 3, 4, 5, 6].map((item) => (
+                    <div
+                      key={`${loop}-${item}`}
+                      className="flex-shrink-0 w-32 h-32 group relative overflow-hidden rounded-sm shadow-md bg-charcoal-900"
+                    >
+                      <img
+                        src={`https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&q=80&w=150&h=150&crop=faces`}
+                        alt={`Portfólió ${item}`}
+                        className="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 transition-all duration-500"
+                      />
+                    </div>
+                  ))
+                )}
+              </div>
             </div>
           </div>
 
