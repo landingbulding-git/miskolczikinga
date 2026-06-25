@@ -47,6 +47,14 @@ export default function HomeServices() {
                 <span className="group-hover:translate-x-1 transition-transform inline-block">&rarr;</span>
               </a>
             </div>
+
+            <div className="mt-8 pt-6 border-t border-charcoal-800/5">
+              <HomeTestimonial
+                text="Kinga mesterileg dolgozik, nem csak a technika, hanem a személyes készségei miatt is ajánlom mindenkinek. Az én sminktetoválásom természetes és tökéletes."
+                name="Éva B."
+                role="Sminktetoválás ügyfél"
+              />
+            </div>
           </motion.div>
 
           {/* Service 2: Sminkoktatás */}
@@ -73,39 +81,16 @@ export default function HomeServices() {
                 <span className="group-hover:translate-x-1 transition-transform inline-block">&rarr;</span>
               </a>
             </div>
+
+            <div className="mt-8 pt-6 border-t border-charcoal-800/5">
+              <HomeTestimonial
+                text="A képzés alatt megtanultam olyan technikákat, amelyeket máshol nem tanítanak. Kinga hozzáértése és gyakorlatia tudása valóban piacképessé tette vállalkozásomat."
+                name="Petra K."
+                role="Sminkoktatás végzettje"
+              />
+            </div>
           </motion.div>
 
-        </div>
-
-        {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 mt-16">
-          {/* Testimonial for Sminktetoválás */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <HomeTestimonial
-              text="Kinga mesterileg dolgozik, nem csak a technika, hanem a személyes készségei miatt is ajánlom mindenkinek. Az én sminktetoválásom természetes és tökéletes."
-              name="Éva B."
-              role="Sminktetoválás ügyfél"
-            />
-          </motion.div>
-
-          {/* Testimonial for Sminkoktatás */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.1 }}
-          >
-            <HomeTestimonial
-              text="A képzés alatt megtanultam olyan technikákat, amelyeket máshol nem tanítanak. Kinga hozzáértése és gyakorlatia tudása valóban piacképessé tette vállalkozásomat."
-              name="Petra K."
-              role="Sminkoktatás végzettje"
-            />
-          </motion.div>
         </div>
 
       </div>
