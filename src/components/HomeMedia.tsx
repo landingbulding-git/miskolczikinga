@@ -15,10 +15,10 @@ export default function HomeMedia() {
         <div className="max-w-3xl mb-16 space-y-4">
           <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block">Médiaszereplések</span>
           <h2 className="font-serif-lux text-4xl sm:text-5xl lg:text-6xl font-light text-charcoal-800 tracking-tight leading-[1.1]">
-            Az évek során <br /><span className="italic">Számos lehetőségem volt.</span>
+            A pályafutásom során <br /><span className="italic">számos exklúzív szakmai magazinban jelentek meg rólam cikkek..</span>
           </h2>
           <p className="text-lg text-charcoal-700/70 font-light max-w-xl">
-            Sajtóban, televízióban, filmen és a divat világában egyaránt.
+          több televíziós műsorban szerepeltem, dolgoztam filmforgatásokon, reklámokban, fotózásokon, divatbemutatókon és különböző fashion eseményeken.
           </p>
         </div>
 

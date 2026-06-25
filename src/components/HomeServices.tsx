@@ -15,7 +15,7 @@ export default function HomeServices() {
         <div className="max-w-3xl mb-16 space-y-4">
           <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block">Eredmények, Szemlélet, Szolgáltatások</span>
           <p className="text-lg sm:text-xl text-charcoal-700/80 font-light leading-relaxed">
-            Háromszoros világbajnoki ezüstérem. Európa-bajnoki aranyérem. Ezek az eredmények fontosak — de nem azért, amit jelképeznek rólam, hanem azért, amit megtanítottak. A versenyeken minden apróság számít. Ez a fegyelem, ez a szemlélet az, amit ma is magammal viszek.
+          A legnagyobb szakmai eredményeim közé tartozik a háromszoros világbajnoki ezüstérem, valamint az Európa-bajnoki aranyérem. Ezekre rendkívül büszke vagyok, de még ennél is fontosabb számomra az a szakmai szemlélet, amelyet az évek során kialakítottam.
           </p>
         </div>
 

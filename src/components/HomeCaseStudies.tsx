@@ -42,7 +42,7 @@ export default function HomeCaseStudies() {
         <div className="max-w-3xl mb-16 space-y-4">
           <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block">Esettanulmányok</span>
           <h2 className="font-serif-lux text-4xl sm:text-5xl lg:text-6xl font-light text-charcoal-800 tracking-tight leading-[1.1]">
-            Néhány munka, <br /><span className="italic">ami megmaradt.</span>
+            Az évek alatt lehetőségem volt, <br /><span className="italic">együtt dolgozni néhány kiemelkedő hírességgel és modellel.</span>
           </h2>
         </div>
 
