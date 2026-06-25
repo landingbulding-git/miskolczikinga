@@ -64,20 +64,16 @@ export default function ValueProps() {
   ];
 
   return (
-    <section className="py-24 bg-cream-50 relative overflow-hidden/5">
-      {/* Decorative luxury guidelines element */}
-      <div className="absolute inset-0 bg-[radial-gradient(#C5A059_1px,transparent_1px)] [background-size:32px_32px] opacity-[0.03]" />
+    <section className="py-20 md:py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
-        {/* Title */}
-        <div className="text-center max-w-2xl mx-auto mb-20 space-y-4">
-          <span className="text-xs font-mono font-bold tracking-widest text-gold-600 uppercase block">Kiemelkedő Értékajánlataink</span>
-          <h2 className="font-serif-lux text-3xl sm:text-5xl font-medium text-charcoal-900 tracking-tight leading-tight">
+        {/* Section Header */}
+        <div className="max-w-3xl mb-16 space-y-6">
+          <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block">Kiemelkedő Értékajánlataink</span>
+          <h2 className="font-serif-lux text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight text-charcoal-800 leading-[1.1]">
             Személyreszabott, egyedi élmény, fájdalommentes eljárás, gyors regenerálódás.
           </h2>
-          <p className="text-charcoal-700 font-light text-sm max-w-lg mx-auto leading-relaxed">
-            Minden egyes részletet úgy terveztem, hogy a legmagasabb szintű luxust, tökéletes biztonságot és az elvárt természetességet garantáljam számodra.
+        </div>
           </p>
           <div className="h-0.5 w-12 bg-gold-400 mx-auto mt-2" />
         </div>
