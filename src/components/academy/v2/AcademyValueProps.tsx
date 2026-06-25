@@ -142,6 +142,31 @@ export default function AcademyValueProps() {
             </motion.div>
           </div>
 
+          {/* Portfolio Gallery - Previous Participants */}
+          <div className="py-12 border-y border-charcoal-800/5">
+            <p className="text-[10px] font-bold tracking-luxury text-charcoal-700/40 uppercase text-center mb-10">
+              Képek korábbi résztvevők portfólióiból
+            </p>
+            <div className="flex flex-nowrap overflow-x-auto gap-4 pb-4">
+              {[1, 2, 3, 4, 5, 6].map((item) => (
+                <motion.div
+                  key={item}
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: item * 0.1 }}
+                  className="flex-shrink-0 w-32 h-32 group relative overflow-hidden rounded-sm shadow-md bg-charcoal-900"
+                >
+                  <img
+                    src={`https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&q=80&w=150&h=150&crop=faces`}
+                    alt={`Portfólió ${item}`}
+                    className="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 transition-all duration-500"
+                  />
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
           {/* Pillar 3: Metodika */}
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 items-center">
             <motion.div 
@@ -226,49 +251,6 @@ export default function AcademyValueProps() {
                   alt="Bőrdiagnosztika" 
                   className="w-full h-full object-cover grayscale-[0.1]"
                 />
-              </div>
-            </motion.div>
-          </div>
-
-          {/* Portfolio Gallery - Participants' Work */}
-          <div className="pt-16 md:pt-24 border-t border-charcoal-800/5">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="space-y-8"
-            >
-              <div className="text-center">
-                <p className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase mb-3">
-                  Képek korábbi résztvevők portfólióiból
-                </p>
-                <h3 className="font-serif-lux text-2xl sm:text-3xl font-light text-charcoal-800">
-                  Végzett tanulóink munkái
-                </h3>
-              </div>
-
-              {/* Gallery Grid */}
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((item) => (
-                  <motion.div
-                    key={item}
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: item * 0.05 }}
-                    className="group relative overflow-hidden rounded-sm shadow-md bg-charcoal-900"
-                  >
-                    <div className="aspect-square">
-                      <img
-                        src={`https://images.unsplash.com/photo-155035529109-a90fb38ba796?auto=format&fit=crop&q=80&w=300&h=300`}
-                        alt={`Résztvevő portfólió ${item}`}
-                        className="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
-                      />
-                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-500" />
-                    </div>
-                  </motion.div>
-                ))}
               </div>
             </motion.div>
           </div>
