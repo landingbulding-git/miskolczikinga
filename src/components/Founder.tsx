@@ -73,10 +73,11 @@ export default function Founder() {
               <div className="absolute -top-4 -left-4 w-12 h-12 border-t-2 border-l-2 border-gold-400 rounded-tl-xl pointer-events-none" />
               <div className="absolute -bottom-4 -right-4 w-12 h-12 border-b-2 border-r-2 border-gold-400 rounded-br-xl pointer-events-none" />
             </motion.div>
-          </div>
+            </div>
+          </motion.div>
 
           {/* Right Column: Narrative Biography & Credentials */}
-          <div className="lg:col-span-7 space-y-8">
+          <div className="lg:w-7/12 space-y-8">
             <div className="space-y-4">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-gold-50 border border-gold-200 text-gold-600 text-xs rounded-full font-mono font-semibold tracking-wider uppercase">
                 <Award className="w-3 h-3 text-gold-500 shrink-0" />
@@ -129,7 +130,6 @@ export default function Founder() {
             </div>
 
           </div>
-
         </div>
       </div>
     </section>
