@@ -40,12 +40,12 @@ export default function AcademyHero() {
               className="space-y-6"
             >
               <h1 className="font-serif-lux text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight text-charcoal-800 leading-[1.2]">
-                Válj <span className="italic text-gold-600"><span className="font-bold">elismert, magasan fizetett</span></span> sminkessé mindössze <span className="font-bold">10 hét alatt</span>, hogy végre a saját <span className="italic">kreativitásodból élhess</span>, kötöttségek nélkül.
+                Válj <span className="italic text-gold-600">elismert, magasan fizetett</span> sminkessé mindössze 10 hét alatt, hogy végre a saját <span className="italic">kreativitásodból élhess</span>, kötöttségek nélkül.
               </h1>
               
               <div className="max-w-xl space-y-6">
                 <p className="text-lg sm:text-xl text-charcoal-700 font-light leading-relaxed">
-                  Sajátítsd el a <span className="font-bold">sémamentes sminkelés logikáját</span> egy <span className="font-bold">háromszoros világbajnoki ezüstérmes</span> sminkmester felügyelete alatt. A képzés végén <span className="font-bold">portfólióval, állami tanúsítvánnyal, és gyakorlati tudással</span> távozol: akár már másnap fogadhatsz vendégeket.
+                  Sajátítsd el a sémamentes sminkelés logikáját egy háromszoros világbajnoki ezüstérmes sminkmester felügyelete alatt. A képzés végén portfólióval, állami tanúsítvánnyal, és gyakorlati tudással távozol: akár már másnap fogadhatsz vendégeket.
                 </p>
               </div>
             </motion.div>

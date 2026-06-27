@@ -25,7 +25,14 @@ export default function ValueProps() {
       badge: 'Természetes Esztétika',
       headline: 'Személyre szabott tervezés, hogy a végeredmény a valódi szépségedet tükrözze.',
       headlineHighlight: 'Személyre szabott tervezés',
-      body: 'Nem dolgozom sablonokkal. Minden vonalat az arcodra tervezek: az arányaidhoz, a bőrszínedhez, az arcformádhoz, hogy a modern, észrevétlen hatás tökéletesen beleolvadjon a vonásaidba. Technikáim könnyedek és légiesek, így az idő múlásával esztétikusan gyógyulnak és halványodnak, elkerülve a régi, drasztikus és elszíneződött tetoválások hatását.',
+      bodyHighlight: [
+        { text: 'Nem dolgozom sablonokkal.', bold: true },
+        { text: ' Minden vonalat az arcodra tervezek: az arányaidhoz, a bőrszínedhez, az arcformádhoz, hogy a modern, ' },
+        { text: 'észrevétlen hatás', bold: true },
+        { text: ' tökéletesen beleolvadjon a vonásaidba. Technikáim ' },
+        { text: 'könnyedek és légiesek', bold: true },
+        { text: ', így az idő múlásával esztétikusan gyógyulnak és halványodnak, elkerülve a régi, drasztikus és elszíneződött tetoválások hatását.' }
+      ],
       img: 'https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&q=80&w=600',
       features: [
         { icon: Search, title: 'Komplex Arc-architektúra', desc: 'Személyre szabott arcarány-elemzés' },
@@ -40,7 +47,14 @@ export default function ValueProps() {
       badge: 'Fájdalommentes Wellness',
       headline: 'Kétfázisú lidokainos érzéstelenítés injekció nélkül a teljes fájdalommentességért.',
       headlineHighlight: 'Kétfázisú lidokainos érzéstelenítés',
-      body: 'Soha nem alkalmazok fájdalmas injekciókat. Ehelyett prémium minőségű, lidokain alapú krémet (vagy érzékenység esetén alternatív krémeket) használok elő- és folyamat közbeni kétlépcsős érzéstelenítésként, ami tökéletesen elzsibbasztja a területet akár 1-1,5 órára.',
+      bodyHighlight: [
+        { text: 'Soha nem alkalmazok fájdalmas injekciókat.' , bold: true },
+        { text: ' Ehelyett ' },
+        { text: 'prémium minőségű, lidokain alapú krémet', bold: true },
+        { text: ' (vagy érzékenység esetén alternatív krémeket) használok elő- és folyamat közbeni kétlépcsős érzéstelenítésként, ami ' },
+        { text: 'tökéletesen elzsibbasztja a területet', bold: true },
+        { text: ' akár 1-1,5 órára.' }
+      ],
       img: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&q=80&w=600',
       features: [
         { icon: ShieldCheck, title: 'Kétfázisú Érzéstelenítés', desc: 'Elő- és folyamatközbeni zsibbasztás' },
@@ -55,7 +69,14 @@ export default function ValueProps() {
       badge: 'Abszolút Biztonság',
       headline: 'Kétlépcsős, óvatos pigmentálás teljesen ingyenes korrekcióval',
       headlineHighlight: 'Kétlépcsős, óvatos pigmentálás',
-      body: 'Első alkalommal mindig halványabb és finomabb alapokat rajzolok, így a gyógyulás alatt teljesen nyugodtan barátkozhatsz meg az új vonásaiddal. A tökéletes, tartós tónust a teljesen ingyenes korrekció során, közösen érjük el. Ha pedig egy elrontott régi tetoválásod van, teljesen őszintén megmondom a lehetőségeket: a túl mély és sötét sebekre először lézeres eltávolítást javaslok a szép végeredményért, míg a halványabbakat azonnal, biztonságosan kijavítom.',
+      bodyHighlight: [
+        { text: 'Első alkalommal mindig halványabb és finomabb alapokat rajzolok', bold: true },
+        { text: ', így a gyógyulás alatt teljesen nyugodtan barátkozhatsz meg az új vonásaiddal. A ' },
+        { text: 'tökéletes, tartós tónust', bold: true },
+        { text: ' a teljesen ingyenes korrekció során, közösen érjük el. Ha pedig egy elrontott régi tetoválásod van, ' },
+        { text: 'teljesen őszintén megmondom a lehetőségeket', bold: true },
+        { text: ': a túl mély és sötét sebekre először lézeres eltávolítást javaslok a szép végeredményért, míg a halványabbakat azonnal, biztonságosan kijavítom.' }
+      ],
       img: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=600',
       features: [
         { icon: Compass, title: 'Biztonsági stratégia', desc: 'Fokozatos sötétítés, nincs sokk' },
@@ -74,7 +95,7 @@ export default function ValueProps() {
         <div className="max-w-3xl mb-16 space-y-6">
           <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block">Kiemelkedő Értékajánlataink</span>
           <h2 className="font-serif-lux text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight text-charcoal-800 leading-[1.1]">
-            <span className="font-bold">Személyreszabott, egyedi élmény</span>, fájdalommentes eljárás, gyors regenerálódás.
+            Személyreszabott, egyedi élmény, fájdalommentes eljárás, gyors regenerálódás.
           </h2>
         </div>
 
@@ -133,7 +154,9 @@ export default function ValueProps() {
                       <span className="font-bold">{p.headlineHighlight}</span>{p.headline.substring(p.headlineHighlight.length)}
                     </h3>
                     <p className="text-sm sm:text-base text-charcoal-800 font-light leading-relaxed">
-                      {p.body}
+                      {p.bodyHighlight ? p.bodyHighlight.map((part, idx) => (
+                        part.bold ? <span key={idx} className="font-bold">{part.text}</span> : part.text
+                      )) : p.body}
                     </p>
                   </div>
 
