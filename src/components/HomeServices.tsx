@@ -34,7 +34,7 @@ export default function HomeServices() {
             <div className="space-y-4">
               <h3 className="font-serif-lux text-3xl font-light text-charcoal-800">Sminktetoválás</h3>
               <p className="text-base text-charcoal-700/70 font-light leading-relaxed">
-                Ehhez pontosan kell érteni az arc arányait, a bőr sajátosságait és azt, hogy mi áll jól valakinek, nem csak most….
+                Egy jó sminktetoválás nem feltűnő. Ehhez pontosan kell érteni az arc arányait, a bőr sajátosságait és azt, hogy mi áll jól valakinek, nem csak most…. Kozmetikusként kezdtem, és ez a bőrismeret azóta is minden munkám alapja.
               </p>
             </div>
 
@@ -68,7 +68,7 @@ export default function HomeServices() {
             <div className="space-y-4">
               <h3 className="font-serif-lux text-3xl font-light text-charcoal-800">Sminkoktatás</h3>
               <p className="text-base text-charcoal-700/70 font-light leading-relaxed">
-                Oktatással immár 15 éve foglalkozom. Ez idő alatt számos sikeres sminkes került ki a kezeim alól, akik ma már országszerte és külföldön is eredményesen dolgoznak.
+                Oktatással immár 15 éve foglalkozom. Ez idő alatt számos sikeres sminkes került ki a kezeim alól, akik ma már országszerte és külföldön is eredményesen dolgoznak. Nem tartok vissza semmit: minden technikát, logikát, munkafolyamatot átadok, ami a mindennapi munkában valóban szükséges.
               </p>
             </div>
 
