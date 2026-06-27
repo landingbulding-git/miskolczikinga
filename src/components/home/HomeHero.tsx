@@ -80,7 +80,7 @@ export default function HomeHero() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative rounded-lg overflow-hidden shadow-lg bg-charcoal-900 h-96 lg:h-full min-h-[400px]"
+              className="relative rounded-lg overflow-hidden shadow-lg bg-charcoal-900 aspect-[3/4]"
             >
               <img
                 src="https://ihbwkp8vwcp4igya.public.blob.vercel-storage.com/mainhero.webp"
