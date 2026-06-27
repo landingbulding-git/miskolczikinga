@@ -16,7 +16,7 @@ export default function HomeServices() {
         <div className="max-w-3xl mb-16 space-y-4">
           <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block">Eredmények, Szemlélet, Szolgáltatások</span>
           <p className="text-lg sm:text-xl text-charcoal-700/80 font-light leading-relaxed">
-          A legnagyobb szakmai eredményeim közé tartozik a háromszoros világbajnoki ezüstérem, valamint az Európa-bajnoki aranyérem. Ezekre rendkívül büszke vagyok, de még ennél is fontosabb számomra az a szakmai szemlélet, amelyet az évek során kialakítottam.
+          A legnagyobb szakmai eredményeim közé tartozik a <strong>háromszoros világbajnoki ezüstérem</strong>, valamint az <strong>Európa-bajnoki aranyérem</strong>. Ezekre rendkívül büszke vagyok, de még ennél is fontosabb számomra az a <strong>szakmai szemlélet</strong>, amelyet az évek során kialakítottam.
           </p>
         </div>
 
@@ -34,7 +34,7 @@ export default function HomeServices() {
             <div className="space-y-4">
               <h3 className="font-serif-lux text-3xl font-light text-charcoal-800">Sminktetoválás</h3>
               <p className="text-base text-charcoal-700/70 font-light leading-relaxed">
-                Egy jó sminktetoválás nem feltűnő. Ehhez pontosan kell érteni az arc arányait, a bőr sajátosságait és azt, hogy mi áll jól valakinek, nem csak most, hanem évek múlva is. Kozmetikusként kezdtem, és ez a bőrismeret azóta is minden munkám alapja.
+                Egy jó sminktetoválás <strong>nem feltűnő</strong>. Ehhez pontosan kell érteni az arc arányait, a bőr sajátosságait és azt, hogy mi áll jól valakinek, nem csak most, hanem évek múlva is. Kozmetikusként kezdtem, és ez a <strong>bőrismeret</strong> azóta is minden munkám alapja.
               </p>
             </div>
 
@@ -68,7 +68,7 @@ export default function HomeServices() {
             <div className="space-y-4">
               <h3 className="font-serif-lux text-3xl font-light text-charcoal-800">Sminkoktatás</h3>
               <p className="text-base text-charcoal-700/70 font-light leading-relaxed">
-                Oktatással immár 15 éve foglalkozom. Ez idő alatt számos sikeres sminkes került ki a kezeim alól, akik ma már országszerte és külföldön is eredményesen dolgoznak. Nem tartok vissza semmit: minden technikát, logikát, munkafolyamatot átadok, ami a mindennapi munkában valóban szükséges.
+                Oktatással immár <strong>15 éve</strong> foglalkozom. Ez idő alatt <strong>számos sikeres sminkes</strong> került ki a kezeim alól, akik ma már országszerte és külföldön is eredményesen dolgoznak. Nem tartok vissza semmit: minden technikát, logikát, munkafolyamatot átadok, ami a mindennapi munkában valóban szükséges.
               </p>
             </div>
 
