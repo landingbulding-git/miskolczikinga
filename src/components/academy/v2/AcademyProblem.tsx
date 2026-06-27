@@ -10,27 +10,52 @@ export default function AcademyProblem() {
   const comparisonItems = [
     {
       typical: "20-30 fős csoport, ahol sablonokat sajátítasz el",
-      kinga: "Kis létszámú csoportok, ahol a technikák mellett gondolkodásmódot is tanulsz"
+      kingaHighlight: [
+        { text: 'Kis létszámú csoportok' , bold: true },
+        { text: ', ahol ' },
+        { text: 'a technikák mellett gondolkodásmódot', bold: true },
+        { text: ' is tanulsz' }
+      ]
     },
     {
       typical: "Drága kötelező kezdőcsomag (200-500 ezer Ft)",
-      kinga: "Korlátlan prémium anyaghasználat (M·A·C, Urban Decay, Inglot) az első naptól"
+      kingaHighlight: [
+        { text: 'Korlátlan prémium anyaghasználat' , bold: true },
+        { text: ' (M·A·C, Urban Decay, Inglot) ' },
+        { text: 'az első naptól' , bold: true }
+      ]
     },
     {
       typical: "Portfólió nélkül kerülsz ki a képzésről",
-      kinga: "Profin retusált digitális portfóliót kapsz, ami azonnal bevethető"
+      kingaHighlight: [
+        { text: 'Profin retusált digitális portfóliót' , bold: true },
+        { text: ' kapsz, ami ' },
+        { text: 'azonnal bevethető' , bold: true }
+      ]
     },
     {
       typical: "Az oktatóddal gyakran nincs személyes kapcsolatod",
-      kinga: "Kinga közvetlenül tanít és korrigál minden mozdulatot"
+      kingaHighlight: [
+        { text: 'Kinga közvetlenül tanít' , bold: true },
+        { text: ' és ' },
+        { text: 'korrigál minden mozdulatot' , bold: true }
+      ]
     },
     {
       typical: "Tanfolyam végén egyedül maradsz",
-      kinga: "Aktív ajánlási hálózat + Kinga lehetőség szerint rangos eseményekre is magával visz"
+      kingaHighlight: [
+        { text: 'Aktív ajánlási hálózat' , bold: true },
+        { text: ' + ' },
+        { text: 'Kinga lehetőség szerint rangos eseményekre' , bold: true },
+        { text: ' is magával visz' }
+      ]
     },
     {
       typical: "Bőrdiagnosztika = extra kurzus, extra pénz",
-      kinga: "Kozmetikus alapú bőrismeretre építünk az alapoktól"
+      kingaHighlight: [
+        { text: 'Kozmetikus alapú bőrismeretre' , bold: true },
+        { text: ' építünk az alapoktól' }
+      ]
     }
   ];
 
@@ -105,7 +130,9 @@ export default function AcademyProblem() {
                 <li key={idx} className="flex items-start gap-6">
                   <span className="text-gold-400 font-bold text-sm mt-1">✓</span>
                   <p className="text-base font-medium text-cream-100/90 leading-relaxed">
-                    {item.kinga}
+                    {item.kingaHighlight ? item.kingaHighlight.map((part, pidx) => (
+                      part.bold ? <span key={pidx} className="font-bold">{part.text}</span> : part.text
+                    )) : item.kinga}
                   </p>
                 </li>
               ))}

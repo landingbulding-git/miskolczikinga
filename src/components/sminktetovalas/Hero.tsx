@@ -39,7 +39,7 @@ export default function Hero() {
               className="space-y-6"
             >
               <h1 className="font-serif-lux text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight text-charcoal-800 leading-[1.2]">
-                Ébredj minden nap <span className="italic text-gold-600"><span className="font-bold">természetes tökéletességben</span></span>: <span className="font-bold">Tartós, Elegáns és Teljesen Natúr</span> sminktetoválás akár egyetlen exklúzív alkalom után.
+                Ébredj minden nap <span className="italic text-gold-600">természetes tökéletességben</span>: Tartós, Elegáns és Teljesen Natúr sminktetoválás akár egyetlen exklúzív alkalom után.
               </h1>
             </motion.div>
 
