@@ -33,7 +33,7 @@ export default function ValueProps() {
         { text: 'könnyedek és légiesek', bold: true },
         { text: ', így az idő múlásával esztétikusan gyógyulnak és halványodnak, elkerülve a régi, drasztikus és elszíneződött tetoválások hatását.' }
       ],
-      img: 'https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&q=80&w=600',
+      img: 'https://ihbwkp8vwcp4igya.public.blob.vercel-storage.com/sminktetovalas_valueprop1.webp',
       features: [
         { icon: Search, title: 'Komplex Arc-architektúra', desc: 'Személyre szabott arcarány-elemzés' },
         { icon: Layers, title: 'Légies soft-powder satír', desc: 'Lágy, természetes tónusok' },
@@ -77,7 +77,7 @@ export default function ValueProps() {
         { text: 'teljesen őszintén megmondom a lehetőségeket', bold: true },
         { text: ': a túl mély és sötét sebekre először lézeres eltávolítást javaslok a szép végeredményért, míg a halványabbakat azonnal, biztonságosan kijavítom.' }
       ],
-      img: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=600',
+      img: 'https://ihbwkp8vwcp4igya.public.blob.vercel-storage.com/sminktetovalas_valueprop3.webp',
       features: [
         { icon: Compass, title: 'Biztonsági stratégia', desc: 'Fokozatos sötétítés, nincs sokk' },
         { icon: Award, title: 'Ingyenes korrekció', desc: 'Az alapár tartalmazza a 2. alkalmat' },
