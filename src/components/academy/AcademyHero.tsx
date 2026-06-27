@@ -58,7 +58,7 @@ export default function AcademyHero() {
                 onClick={scrollToForm}
                 className="w-full sm:w-auto bg-gold-500 hover:bg-gold-600 text-charcoal-950 text-sm sm:text-base font-bold tracking-wider uppercase px-8 py-4 sm:py-5 rounded-xl border border-gold-400 hover:border-gold-500 transition-all cursor-pointer shadow-md hover:-translate-y-0.5 active:translate-y-0 text-center"
               >
-                Jelentkezem Kingához képzésre &rarr;
+                Elindítom a sminkes karrierem &rarr;
               </button>
               
               <p className="text-xs text-charcoal-700 font-mono flex items-center gap-1.5 justify-center lg:justify-start">

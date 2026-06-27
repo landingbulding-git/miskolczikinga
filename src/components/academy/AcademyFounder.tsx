@@ -75,7 +75,7 @@ export default function AcademyFounder() {
                 onClick={scrollToForm}
                 className="bg-gold-500 hover:bg-gold-600 text-charcoal-950 border border-gold-400 hover:border-gold-500 px-8 py-4 rounded-xl text-xs sm:text-sm font-sans font-bold uppercase tracking-wider transition-all shadow-md cursor-pointer inline-flex items-center gap-2 hover:-translate-y-0.5 active:translate-y-0"
               >
-                Jelentkezem Kingához képzésre <ArrowRight className="w-4 h-4" />
+                Elindítom a sminkes karrierem <ArrowRight className="w-4 h-4" />
               </button>
             </div>
 

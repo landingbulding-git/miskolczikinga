@@ -100,7 +100,7 @@ export default function AcademyFounder() {
                 onClick={scrollToForm}
                 className="group relative px-10 py-5 border border-charcoal-800 text-charcoal-800 text-xs font-bold tracking-luxury uppercase overflow-hidden transition-all duration-500 hover:text-cream-100 rounded-none"
               >
-                <span className="relative z-10">Jelentkezem Kingához képzésre</span>
+                <span className="relative z-10">Elindítom a sminkes karrierem</span>
                 <div className="absolute inset-0 bg-charcoal-800 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
               </button>
             </div>

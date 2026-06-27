@@ -169,7 +169,7 @@ export default function AcademyPricing() {
                   onClick={scrollToForm}
                   className="w-full bg-gold-500 hover:bg-gold-600 text-charcoal-950 font-bold tracking-wider uppercase py-4 rounded-xl border border-gold-400 hover:border-gold-500 transition-all cursor-pointer shadow-md text-center text-sm hover:-translate-y-0.5 active:translate-y-0"
                 >
-                  Jelentkezem Kingához képzésre &rarr;
+                  Elindítom a sminkes karrierem &rarr;
                 </button>
                 <p className="text-center text-[11px] text-charcoal-600 pt-3 font-mono">
                   🔒 A helyfoglalás a 10% előleg beérkezése után válik 100% véglegessé.
