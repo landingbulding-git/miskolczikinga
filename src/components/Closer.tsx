@@ -82,7 +82,7 @@ export default function Closer() {
             </div>
 
             <p className="text-lg text-cream-100/70 font-light leading-relaxed max-w-xl">
-              Van kérdésed vagy szeretnél személyesen konzultálni? Küldj egy üzenetet az alábbi formán keresztül, és Kinga 24 órán belül felvisz veled a kapcsolatot.
+              Kérdésed van vagy szeretnél személyesen konzultálni? Küldj egy üzenetet az alábbi formon keresztül, és Kinga 24 órán belül felveszi veled a kapcsolatot.
             </p>
           </div>
 
@@ -148,7 +148,7 @@ export default function Closer() {
                         value={interest}
                         onChange={(e) => setInterest(e.target.value)}
                         className="w-full bg-transparent border-b border-white/20 py-4 text-sm focus:outline-none focus:border-gold-400 transition-colors placeholder:text-cream-100/20 resize-none leading-relaxed"
-                        placeholder="ÜZENETEID *"
+                        placeholder="ÜZENETED *"
                       />
                     </div>
 
