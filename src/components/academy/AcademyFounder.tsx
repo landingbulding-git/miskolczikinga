@@ -22,10 +22,11 @@ export default function AcademyFounder() {
           {/* Image on left for founder block */}
           <div className="lg:col-span-5">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-gold-300/20 max-w-md mx-auto aspect-[3/4]">
-              <img 
-                src="https://images.unsplash.com/photo-1552422535-c45813c61732?auto=format&fit=crop&q=80&w=600" 
+              <img
+                src="https://ihbwkp8vwcp4igya.public.blob.vercel-storage.com/kingafounder.webp"
                 alt="Hovorka-Miskolczi Kinga sminkmester"
                 className="w-full h-full object-cover select-none pointer-events-none"
+                referrerPolicy="no-referrer"
               />
               <div className="absolute bottom-4 left-4 right-4 bg-charcoal-950/80 backdrop-blur-md p-4 rounded-xl border border-gold-400/20">
                 <span className="text-[10px] font-mono font-bold tracking-widest text-gold-400 uppercase">

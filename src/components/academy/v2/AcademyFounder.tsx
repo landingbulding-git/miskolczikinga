@@ -29,10 +29,11 @@ export default function AcademyFounder() {
           >
             <div className="relative">
               <div className="aspect-[3/4] rounded-sm overflow-hidden shadow-2xl bg-cream-200">
-                <img 
-                  src="https://images.unsplash.com/photo-1552422535-c45813c61732?auto=format&fit=crop&q=80&w=800" 
+                <img
+                  src="https://ihbwkp8vwcp4igya.public.blob.vercel-storage.com/kingafounder.webp"
                   alt="Hovorka-Miskolczi Kinga sminkmester"
                   className="w-full h-full object-cover grayscale-[0.1] contrast-[1.05]"
+                  referrerPolicy="no-referrer"
                 />
               </div>
               
