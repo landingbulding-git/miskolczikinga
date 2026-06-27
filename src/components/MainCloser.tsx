@@ -6,7 +6,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 
-export default function Closer() {
+export default function MainCloser() {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
@@ -56,14 +56,6 @@ export default function Closer() {
     setIsSuccess(false);
   };
 
-  const benefits = [
-    "Egyéni konzultáció és arc-diagnózis: Személyre szabott tervezés a Te arcarchitektúrádra",
-    "Prémium kétfázisú érzéstelenítés: Fájdalommentes, luxus eljárás",
-    "Ingyenes korrekció: Az alapár tartalmazza a tökéletesítő második alkalmat",
-    "15 éves bajnoki garancia: Nemzetközi szintű szépítőmunka",
-    "Esztétikus gyógyulás: Modern pigmentálási technikám természetes hatást garantál"
-  ];
-
   return (
     <section id="lead-form-anchor" className="py-16 md:py-24 bg-charcoal-800 text-cream-100 overflow-hidden relative">
       {/* Editorial background element */}
@@ -75,27 +67,15 @@ export default function Closer() {
           {/* Left Column - Editorial Content */}
           <div className="lg:w-1/2 space-y-8">
             <div className="space-y-4">
-              <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block">Jelentkezés konzultációra</span>
+              <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block">Kapcsolatfelvétel</span>
               <h2 className="font-serif-lux text-4xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.1]">
-                Biztosítsd be az időtlen szépséget. <br /><span className="italic">Most, amíg még van hely.</span>
+                Írj egy üzenetet. <br /><span className="italic">Kinga személyesen válaszol.</span>
               </h2>
             </div>
 
             <p className="text-lg text-cream-100/70 font-light leading-relaxed max-w-xl">
-              Csak korlátozott számú vendéget fogadok havi szinten, hogy minden egyes alkalomra 100%-os figyelmet tudjak fordítani. Az arc egyedi, az Ön szépségvonalai sablonok nélkül érdemelnek kezelést.
+              Kérdésed van vagy szeretnél személyesen konzultálni? Küldj egy üzenetet az alábbi formon keresztül, és Kinga 24 órán belül felveszi veled a kapcsolatot.
             </p>
-
-            <div className="space-y-6 pt-4">
-              <h4 className="text-[11px] font-bold tracking-luxury text-gold-400/60 uppercase">Amit megkapsz</h4>
-              <ul className="space-y-4">
-                {benefits.map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-4 text-base text-cream-100/80 font-light">
-                    <span className="text-gold-500 font-bold">—</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
 
           {/* Right Column - Form */}
@@ -110,9 +90,8 @@ export default function Closer() {
                   className="space-y-10"
                 >
                   <div className="space-y-2 border-b border-white/10 pb-6">
-                    <h3 className="font-serif-lux text-3xl font-light text-white">Konzultációs Forma</h3>
-                    <p className="text-[10px] font-bold tracking-luxury text-gold-400 uppercase">Prémium Sminktetoválás</p>
-                    <p className="text-xs text-cream-100/40 font-light mt-2 italic">Kérjük, adja meg adatait. Kinga személyesen felveszi veled a kapcsolatot 24 órán belül.</p>
+                    <h3 className="font-serif-lux text-3xl font-light text-white">Kapcsolatfelvétel</h3>
+                    <p className="text-xs text-cream-100/40 font-light mt-2 italic">Kérjük, adja meg adatait és üzenetét. Kinga személyesen válaszol 24 órán belül.</p>
                   </div>
 
                   {error && (
@@ -154,14 +133,14 @@ export default function Closer() {
                       />
                     </div>
 
-                    {/* Interest */}
+                    {/* Message */}
                     <div className="relative group">
                       <textarea
                         rows={4}
                         value={interest}
                         onChange={(e) => setInterest(e.target.value)}
                         className="w-full bg-transparent border-b border-white/20 py-4 text-sm focus:outline-none focus:border-gold-400 transition-colors placeholder:text-cream-100/20 resize-none leading-relaxed"
-                        placeholder="MILYEN TETOVÁLÁST SZERETNÉL? ÍRD LE PÁR MONDATBAN! *"
+                        placeholder="ÜZENETED *"
                       />
                     </div>
 
@@ -183,7 +162,7 @@ export default function Closer() {
                         disabled={isSubmitting}
                         className="group relative w-full py-6 bg-gold-500 text-charcoal-900 text-xs font-bold tracking-luxury uppercase overflow-hidden transition-all duration-500 hover:bg-gold-400 rounded-none shadow-xl"
                       >
-                        <span className="relative z-10">{isSubmitting ? 'FELDOLGOZÁS...' : 'KÜLDÖM A JELENTKEZÉSEM'}</span>
+                        <span className="relative z-10">{isSubmitting ? 'FELDOLGOZÁS...' : 'Elküldöm az üzenetemet'}</span>
                       </button>
 
                       <p className="text-[10px] text-cream-100/30 font-light leading-relaxed text-center italic">
@@ -204,13 +183,13 @@ export default function Closer() {
                     <p className="text-xs text-gold-400 uppercase tracking-luxury">Jelentkezésedet sikeresen rögzítettük.</p>
                   </div>
                   <p className="text-sm text-cream-100/60 font-light max-w-sm mx-auto leading-relaxed">
-                    Kinga 24 órán belül személyesen felhívni fog a megadott számon a konzultáció szervezéséhez. Küldtünk egy automatikus tájékoztató levelet e-mail fiókodba.
+                    Kinga 24 órán belül személyesen felhívni fog a megadott számon. Küldtünk egy automatikus tájékoztató levelet e-mail fiókodba.
                   </p>
                   <button
                     onClick={handleReset}
                     className="text-[10px] font-bold tracking-luxury text-white/40 uppercase hover:text-white transition-colors"
                   >
-                    Új Jelentkezés leadása
+                    Új Üzenet leadása
                   </button>
                 </motion.div>
               )}
