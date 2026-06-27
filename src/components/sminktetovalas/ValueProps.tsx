@@ -23,7 +23,8 @@ export default function ValueProps() {
       id: 'no-makeup',
       num: '01',
       badge: 'Természetes Esztétika',
-      headline: '<strong>Személyre szabott tervezés</strong>, hogy a végeredmény a valódi szépségedet tükrözze.',
+      headline: 'Személyre szabott tervezés, hogy a végeredmény a valódi szépségedet tükrözze.',
+      headlineHighlight: 'Személyre szabott tervezés',
       body: 'Nem dolgozom sablonokkal. Minden vonalat az arcodra tervezek: az arányaidhoz, a bőrszínedhez, az arcformádhoz, hogy a modern, észrevétlen hatás tökéletesen beleolvadjon a vonásaidba. Technikáim könnyedek és légiesek, így az idő múlásával esztétikusan gyógyulnak és halványodnak, elkerülve a régi, drasztikus és elszíneződött tetoválások hatását.',
       img: 'https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&q=80&w=600',
       features: [
@@ -37,7 +38,8 @@ export default function ValueProps() {
       id: 'pain-elimination',
       num: '02',
       badge: 'Fájdalommentes Wellness',
-      headline: '<strong>Kétfázisú lidokainos érzéstelenítés</strong> injekció nélkül a teljes fájdalommentességért.',
+      headline: 'Kétfázisú lidokainos érzéstelenítés injekció nélkül a teljes fájdalommentességért.',
+      headlineHighlight: 'Kétfázisú lidokainos érzéstelenítés',
       body: 'Soha nem alkalmazok fájdalmas injekciókat. Ehelyett prémium minőségű, lidokain alapú krémet (vagy érzékenység esetén alternatív krémeket) használok elő- és folyamat közbeni kétlépcsős érzéstelenítésként, ami tökéletesen elzsibbasztja a területet akár 1-1,5 órára.',
       img: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&q=80&w=600',
       features: [
@@ -51,7 +53,8 @@ export default function ValueProps() {
       id: 'risk-correction',
       num: '03',
       badge: 'Abszolút Biztonság',
-      headline: '<strong>Kétlépcsős, óvatos pigmentálás</strong> teljesen ingyenes korrekcióval',
+      headline: 'Kétlépcsős, óvatos pigmentálás teljesen ingyenes korrekcióval',
+      headlineHighlight: 'Kétlépcsős, óvatos pigmentálás',
       body: 'Első alkalommal mindig halványabb és finomabb alapokat rajzolok, így a gyógyulás alatt teljesen nyugodtan barátkozhatsz meg az új vonásaiddal. A tökéletes, tartós tónust a teljesen ingyenes korrekció során, közösen érjük el. Ha pedig egy elrontott régi tetoválásod van, teljesen őszintén megmondom a lehetőségeket: a túl mély és sötét sebekre először lézeres eltávolítást javaslok a szép végeredményért, míg a halványabbakat azonnal, biztonságosan kijavítom.',
       img: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=600',
       features: [
@@ -71,7 +74,7 @@ export default function ValueProps() {
         <div className="max-w-3xl mb-16 space-y-6">
           <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block">Kiemelkedő Értékajánlataink</span>
           <h2 className="font-serif-lux text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight text-charcoal-800 leading-[1.1]">
-            <strong>Személyreszabott, egyedi élmény</strong>, fájdalommentes eljárás, gyors regenerálódás.
+            <span className="font-bold">Személyreszabott, egyedi élmény</span>, fájdalommentes eljárás, gyors regenerálódás.
           </h2>
         </div>
 
@@ -127,7 +130,7 @@ export default function ValueProps() {
                       Pillér {p.num}
                     </span>
                     <h3 className="font-serif-lux text-2xl sm:text-3xl lg:text-4xl font-medium tracking-tight text-charcoal-900 leading-tight">
-                      {p.headline}
+                      <span className="font-bold">{p.headlineHighlight}</span>{p.headline.substring(p.headlineHighlight.length)}
                     </h3>
                     <p className="text-sm sm:text-base text-charcoal-800 font-light leading-relaxed">
                       {p.body}

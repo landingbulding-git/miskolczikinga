@@ -42,7 +42,7 @@ export default function HomeHero() {
             >
               <h1 className="font-serif-lux text-4xl sm:text-5xl lg:text-5xl font-light tracking-tight text-charcoal-800 leading-[1.2]">
                 Hovorka-Miskolczi Kinga vagyok, <br />
-                <span className="italic text-gold-600"><strong>Világ és európabajnok</strong> sminkmester.</span>
+                <span className="italic text-gold-600"><span className="font-bold">Világ és európabajnok</span> sminkmester.</span>
               </h1>
             </motion.div>
 
@@ -53,7 +53,7 @@ export default function HomeHero() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-lg sm:text-xl text-charcoal-700 font-light leading-relaxed max-w-2xl"
             >
-              <strong>Több mint 20 éve</strong> foglalkozom professzionális sminkeléssel, és ugyanennyi ideje aktív szereplője vagyok a hazai és nemzetközi sminkversenyek világának. Ma pedig <strong>hazai és nemzetközi zsűritagként, valamint versenyfelkészítőként</strong> veszek részt a szakmai életben.
+              <span className="font-bold">Több mint 20 éve</span> foglalkozom professzionális sminkeléssel, és ugyanennyi ideje aktív szereplője vagyok a hazai és nemzetközi sminkversenyek világának. Ma pedig <span className="font-bold">hazai és nemzetközi zsűritagként, valamint versenyfelkészítőként</span> veszek részt a szakmai életben.
             </motion.p>
 
             {/* CTA */}

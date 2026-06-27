@@ -39,7 +39,7 @@ export default function Hero() {
               className="space-y-6"
             >
               <h1 className="font-serif-lux text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight text-charcoal-800 leading-[1.2]">
-                Ébredj minden nap <span className="italic text-gold-600"><strong>természetes tökéletességben</strong></span>: <strong>Tartós, Elegáns és Teljesen Natúr</strong> sminktetoválás akár egyetlen exklúzív alkalom után.
+                Ébredj minden nap <span className="italic text-gold-600"><span className="font-bold">természetes tökéletességben</span></span>: <span className="font-bold">Tartós, Elegáns és Teljesen Natúr</span> sminktetoválás akár egyetlen exklúzív alkalom után.
               </h1>
             </motion.div>
 
@@ -51,7 +51,7 @@ export default function Hero() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="text-lg sm:text-xl text-charcoal-700 font-light leading-relaxed"
               >
-                Ha már láttál elszíneződött, aszimmetrikus munkákat, és attól félsz, hogy veled is ez történik.. ez a félelem jogos. A <strong>15 éves nemzetközi tapasztalatom</strong> és a <strong>kétfázisú érzéstelenítési protokollom</strong> pontosan ezt zárja ki.
+                Ha már láttál elszíneződött, aszimmetrikus munkákat, és attól félsz, hogy veled is ez történik.. ez a félelem jogos. A <span className="font-bold">15 éves nemzetközi tapasztalatom</span> és a <span className="font-bold">kétfázisú érzéstelenítési protokollom</span> pontosan ezt zárja ki.
               </motion.p>
             </div>
 
