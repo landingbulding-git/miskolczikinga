@@ -30,9 +30,10 @@ export default function Founder() {
             <div className="relative">
               <div className="aspect-[3/4] rounded-sm overflow-hidden shadow-2xl bg-cream-200">
                 <img
-                  src="https://scontent.fbud4-1.fna.fbcdn.net/v/t39.30808-6/472141294_18480923419003329_8740953818239765070_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=jj_M-tdF3dcQ7kNvwHUhlpu&_nc_oc=AdrwlPs4SrHjcX11wPRfdykSKAqUul0tMe0bMkHa3r_OwVcK4m9bGiUGWJVwziiaKAwXtEtuGFYdL9_j7_H2sKkm&_nc_zt=23&_nc_ht=scontent.fbud4-1.fna&_nc_gid=SKKNedSSrVVvgq-P6niR4g&_nc_ss=7b2a8&oh=00_Af_QRprhdkoTvdRnZeG_OKT9MpfG5xCn_gKt4nX3GqcSrw&oe=6A249092"
+                  src="https://ihbwkp8vwcp4igya.public.blob.vercel-storage.com/kingafounder.webp"
                   alt="Hovorka-Miskolczi Kinga sminkmester"
                   className="w-full h-full object-cover grayscale-[0.1] contrast-[1.05]"
+                  referrerPolicy="no-referrer"
                 />
               </div>
 
