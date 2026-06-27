@@ -83,8 +83,8 @@ export default function HomeHero() {
               className="relative rounded-lg overflow-hidden shadow-lg bg-charcoal-900 h-96 lg:h-full min-h-[400px]"
             >
               <img
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=600"
-                alt="[PLACEHOLDER - Kinga prémium portréfotó]"
+                src="https://pozn1gbp92zaij7s.private.blob.vercel-storage.com/mainhero.webp?vercel-blob-valid-until=1782560674856&vercel-blob-delegation=eyJzdG9yZUlkIjoic3RvcmVfUG96bjFHQnA5MnpBSWo3UyIsIm93bmVySWQiOiJ0ZWFtXzdPbGprOU0xOFNFRjE4UTdoREh4UHkySSIsInBhdGhuYW1lIjoiKiIsIm9wZXJhdGlvbnMiOlsiZ2V0IiwiaGVhZCJdLCJ2YWxpZFVudGlsIjoxNzgyNjAzNzk1NTU3LCJpYXQiOjE3ODI1NjA1OTU2NzF9.kc8nRz9OKQa5xiBtoLCVNndLyM1a5FvzE12t0DDpAdg&vercel-blob-signature=LMQp2qOCQFnR7E9J669oXYmeHFEyg1VhKEEtPbtxEpQ"
+                alt="Hovorka-Miskolczi Kinga - Premium portrait"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
