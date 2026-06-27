@@ -10,17 +10,39 @@ export default function Process() {
   const steps = [
     {
       title: "Konzultáció & Egészségügyi szűrés",
-      description: "Küldd be az űrlapot mindössze 30 másodperc alatt, és 24 órán belül felhívlak egy kellemes egyeztetésre. Már az első beszélgetés alatt kiszűrjük az esetleges kontraindikációkat, kizáró tényezőket a biztonságodért.",
+      descriptionHighlight: [
+        { text: 'Küldd be az űrlapot mindössze ', },
+        { text: '30 másodperc alatt', bold: true },
+        { text: ', és ' },
+        { text: '24 órán belül felhívlak', bold: true },
+        { text: ' egy kellemes egyeztetésre. Már az első beszélgetés alatt ' },
+        { text: 'kiszűrjük az esetleges kontraindikációkat', bold: true },
+        { text: ', kizáró tényezőket a biztonságodért.' }
+      ],
       label: "Egyéni konzultáció"
     },
     {
-      title: "Fájdalommentes érzéstelenítés és előrajzoláss",
-      description: "A beleegyező nyilatkozat aláírása után megkezdjük a hatékony érzéstelenítést (injekció nélkü), majd milliméter pontosan megtervezem az arcodhoz illő egyedi formát. Te hagyod jóvá a vonalakat, én pedig egy felületes átkarcolással rögzítem a kontúrt.",
+      title: "Fájdalommentes érzéstelenítés és előrajzolás",
+      descriptionHighlight: [
+        { text: 'A beleegyező nyilatkozat aláírása után megkezdjük a ' },
+        { text: 'hatékony érzéstelenítést (injekció nélkül)', bold: true },
+        { text: ', majd ' },
+        { text: 'milliméter pontosan megtervezem', bold: true },
+        { text: ' az arcodhoz illő egyedi formát. ' },
+        { text: 'Te hagyod jóvá a vonalakat', bold: true },
+        { text: ', én pedig egy felületes átkarcolással rögzítem a kontúrt.' }
+      ],
       label: "Személyre szabott tervezés"
     },
     {
       title: "Fájdalommentes pigmentálás és ingyenes korrekció",
-      description: "Az átkarcolt területre felviszem a másodlagos érzéstelenítőt, ami akár 1–1,5 órára teljesen elzsibbasztja a bőrt a tökéletes kényelemért. Ezután mikrotűs géppel és orvosi tisztaságú színgarantált pigmentekkel elkészítem a finom satírt.",
+      descriptionHighlight: [
+        { text: 'Az átkarcolt területre felviszem a másodlagos érzéstelenítőt, ami ' },
+        { text: 'akár 1–1,5 órára teljesen elzsibbasztja a bőrt', bold: true },
+        { text: ' a tökéletes kényelemért. Ezután ' },
+        { text: 'mikrotűs géppel és orvosi tisztaságú szín garantált pigmentekkel', bold: true },
+        { text: ' elkészítem a finom satírt.' }
+      ],
       label: "Fájdalommentes beavatkozás"
     }
   ];
@@ -58,7 +80,9 @@ export default function Process() {
                   {step.title}
                 </h3>
                 <p className="text-sm text-charcoal-700/70 font-light leading-relaxed">
-                  {step.description}
+                  {step.descriptionHighlight ? step.descriptionHighlight.map((part, idx) => (
+                    part.bold ? <span key={idx} className="font-bold">{part.text}</span> : part.text
+                  )) : step.description}
                 </p>
               </div>
 
