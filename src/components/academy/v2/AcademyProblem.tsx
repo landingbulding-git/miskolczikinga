@@ -56,6 +56,15 @@ export default function AcademyProblem() {
         { text: 'Kozmetikus alapú bőrismeretre' , bold: true },
         { text: ' építünk az alapoktól' }
       ]
+    },
+    {
+      typical: "Az oktatók gyakran tapasztalatlan vagy generalisták",
+      kingaHighlight: [
+        { text: '15 év tapasztalat' , bold: true },
+        { text: ' az elite professzionálok oktatásában – ' },
+        { text: 'nemzetközi bajnokok és elismert szakemberek' , bold: true },
+        { text: ' mentora' }
+      ]
     }
   ];
 
