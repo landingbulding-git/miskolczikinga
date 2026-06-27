@@ -34,7 +34,7 @@ export default function HomeServices() {
             <div className="space-y-4">
               <h3 className="font-serif-lux text-3xl font-light text-charcoal-800">Sminktetoválás</h3>
               <p className="text-base text-charcoal-700/70 font-light leading-relaxed">
-                Egy jó sminktetoválás nem feltűnő. Ehhez pontosan kell érteni az arc arányait, a bőr sajátosságait és azt, hogy mi áll jól valakinek, nem csak most…. Kozmetikusként kezdtem, és ez a bőrismeret azóta is minden munkám alapja.
+                Egy jó sminktetoválás nem feltűnő. Ehhez pontosan kell érteni az arc arányait, a bőr sajátosságait és azt, hogy mi áll jól valakinek, nem csak most, hanem évek múlva is. Kozmetikusként kezdtem, és ez a bőrismeret azóta is minden munkám alapja.
               </p>
             </div>
 
