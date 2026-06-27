@@ -69,7 +69,7 @@ export default function Founder() {
 
             <div className="space-y-6 text-charcoal-700/80 font-light text-lg leading-relaxed max-w-2xl">
               <p>
-                Hovorka-Miskolczi Kinga vagyok, sminkmester. Számomra a smink az önkifejezés egyik legszebb formája – egy erő és egy fegyver, hogy magabiztosabbnak érezd magad. Többszörös Európa- és Világbajnoki dobogósként, valamint a Babor magyarországi sminkmestereként az elmúlt 15 évben Londontól Miami-ig képeztem magam.
+                Hovorka-Miskolczi Kinga vagyok, sminkmester. Számomra a smink az önkifejezés egyik legszebb formája – egy erő és egy fegyver, hogy magabiztosabbnak érezd magad. Többszörös Európa- és Világbajnoki dobogósként, valamint a Babor volt magyarországi sminkmestereként az elmúlt 15 évben Londontól Miami-ig képeztem magam.
               </p>
               <p>
                 Célom minden alkalommal ugyanaz: nem sablonokat gyártani, hanem megtalálni és kiemelni a benned rejlő egyedi szépséget, hogy önmagad legragyogóbb változata köszönjön vissza a tükörben. A 15 éves nemzetközi tapasztalatom és az orvosi tisztaságú protokolljaim garantálják a fájdalommentességet és a tökéletes eredményt.
@@ -85,7 +85,7 @@ export default function Founder() {
             >
               <div className="relative z-10">
                 <p className="font-serif-lux text-xl italic text-cream-100 leading-relaxed">
-                  „Nálam nem kapod sablonokat, sem hátrálékos vagy elszíneződött munkákat. Minden vonalat az arcodra tervezek, minden pigmentálást személyre szabom. Ez az én 15 éves bajnoki garancia: az arcod biztonságban van."
+                  „Nálam nem kapsz sablonokat, sem elrontott vagy elszíneződött tetoválásokat. Minden vonalat az arcodra tervezek, és minden pigmentet személyre szabok. Ez a 15 éves bajnoki garanciám: az arcod nálam biztonságban van."
                 </p>
               </div>
               <div className="absolute top-0 right-0 w-24 h-24 bg-gold-400/10 -z-0" />

@@ -6,8 +6,8 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Award, Trophy } from 'lucide-react';
-import SocialProof from '../../SocialProof';
-import BrandLogos from '../../BrandLogos';
+import SocialProof from '../../shared/SocialProof';
+import BrandLogos from '../../shared/BrandLogos';
 
 export default function AcademyHero() {
   const scrollToForm = () => {
