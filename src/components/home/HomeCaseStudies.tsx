@@ -13,7 +13,7 @@ export default function HomeCaseStudies() {
     {
       id: 1,
       title: 'Párizsi Luxussminkelés Egy Királynő-Döntösnek',
-      image: 'https://pozn1gbp92zaij7s.private.blob.vercel-storage.com/maincasestudy1.webp?vercel-blob-valid-until=1782560689825&vercel-blob-delegation=eyJzdG9yZUlkIjoic3RvcmVfUG96bjFHQnA5MnpBSWo3UyIsIm93bmVySWQiOiJ0ZWFtXzdPbGprOU0xOFNFRjE4UTdoREh4UHkySSIsInBhdGhuYW1lIjoiKiIsIm9wZXJhdGlvbnMiOlsiZ2V0IiwiaGVhZCJdLCJ2YWxpZFVudGlsIjoxNzgyNjAzNzk1NTU3LCJpYXQiOjE3ODI1NjA1OTU2NzF9.kc8nRz9OKQa5xiBtoLCVNndLyM1a5FvzE12t0DDpAdg&vercel-blob-signature=2q_TqgUg-GiUWYOimeF9LIy1lMa1XzcbObc_zEUdfWs',
+      image: 'https://ihbwkp8vwcp4igya.public.blob.vercel-storage.com/maincasestudy1.webp',
       who: 'Hamikus Renáta (influenszer, Miss Hungary döntős)',
       occasion: 'Egy exklúzív párizsi workshopra készültünk együtt',
       challenge: 'Egy nemzetközileg elismert szépségkirálynő-döntős és influenszer esetében olyan magazin-minőségű, sémamentes luxussminket kellett alkotni a divat fővárosában, amely a kamerák előtt és élőben, a workshop fényeinél is hozza a prémium, hibátlan eleganciát.',
@@ -22,7 +22,7 @@ export default function HomeCaseStudies() {
     {
       id: 2,
       title: 'Fotós Workshop — Párizs, Két Modell, Egy Vizuális Harmónia',
-      image: 'https://pozn1gbp92zaij7s.private.blob.vercel-storage.com/maincasestudy2.webp?vercel-blob-valid-until=1782560701946&vercel-blob-delegation=eyJzdG9yZUlkIjoic3RvcmVfUG96bjFHQnA5MnpBSWo3UyIsIm93bmVySWQiOiJ0ZWFtXzdPbGprOU0xOFNFRjE4UTdoREh4UHkySSIsInBhdGhuYW1lIjoiKiIsIm9wZXJhdGlvbnMiOlsiZ2V0IiwiaGVhZCJdLCJ2YWxpZFVudGlsIjoxNzgyNjAzNzk1NTU3LCJpYXQiOjE3ODI1NjA1OTU2NzF9.kc8nRz9OKQa5xiBtoLCVNndLyM1a5FvzE12t0DDpAdg&vercel-blob-signature=-ARa8z6LlMjdfGKIUcj2I1oOp3DYk7uAGVa15xOP5OI',
+      image: 'https://ihbwkp8vwcp4igya.public.blob.vercel-storage.com/maincasestudy2.webp',
       who: 'Balogh Eleni (Miss Balaton)',
       occasion: 'Egy párizsi fotós workshop, ahol a párjával közösen modellkedtek',
       challenge: 'Egy fotós workshopon a sminknek egyszerre kell ellenállnia a stúdiófények és a külső helyszínek megpróbáltatásainak, miközben egy Miss Balaton győztes esetében elvárás a magazin-kompatibilis, nemzetközi szintű prémium elegancia.',
@@ -31,7 +31,7 @@ export default function HomeCaseStudies() {
     {
       id: 3,
       title: 'Évek Alatt a Vörös Szőnyegen — Egy Közszereplő Stabil Elegancia',
-      image: 'https://pozn1gbp92zaij7s.private.blob.vercel-storage.com/maincasestudy1.webp?vercel-blob-valid-until=1782560689825&vercel-blob-delegation=eyJzdG9yZUlkIjoic3RvcmVfUG96bjFHQnA5MnpBSWo3UyIsIm93bmVySWQiOiJ0ZWFtXzdPbGprOU0xOFNFRjE4UTdoREh4UHkySSIsInBhdGhuYW1lIjoiKiIsIm9wZXJhdGlvbnMiOlsiZ2V0IiwiaGVhZCJdLCJ2YWxpZFVudGlsIjoxNzgyNjAzNzk1NTU3LCJpYXQiOjE3ODI1NjA1OTU2NzF9.kc8nRz9OKQa5xiBtoLCVNndLyM1a5FvzE12t0DDpAdg&vercel-blob-signature=2q_TqgUg-GiUWYOimeF9LIy1lMa1XzcbObc_zEUdfWs',
+      image: 'https://ihbwkp8vwcp4igya.public.blob.vercel-storage.com/maincasestudy1.webp',
       who: 'Sarka Kata (üzletasszony, celeb)',
       occasion: 'Különböző prémium társasági események, gálák és forgatások egy többéves időszakon át (kb. 2013–2015 között)',
       challenge: 'Egy országosan ismert, folyamatos kereszttűzben lévő közszereplő esetében olyan stabil, tartós és kifogástalan megjelenést kellett biztosítani, amely a vörös szőnyegtől a televíziós stúdiókig, mindenféle megvilágításban konzisztensen hozza a luxus elvárásokat.',
