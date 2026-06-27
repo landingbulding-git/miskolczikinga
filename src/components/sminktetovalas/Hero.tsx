@@ -91,7 +91,7 @@ export default function Hero() {
               className="relative rounded-lg overflow-hidden shadow-lg bg-charcoal-900 h-96 lg:h-full min-h-[400px]"
             >
               <img
-                src="https://images.unsplash.com/photo-1632017402126-d868ced47ef7?auto=format&fit=crop&q=80&w=600"
+                src="https://ihbwkp8vwcp4igya.public.blob.vercel-storage.com/sminktetovalashero.webp"
                 alt="Premium makeup tattoo service"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
