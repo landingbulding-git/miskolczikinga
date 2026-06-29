@@ -6,6 +6,12 @@
 import React from 'react';
 import { motion } from 'motion/react';
 
+const videos = [
+  { id: '9O3CsZQZWLQ' },
+  { id: 'brtY_XHoKFs' },
+  { id: '40NcbfOGXvY' },
+];
+
 export default function HomeMedia() {
   return (
     <section className="py-20 md:py-28 bg-cream-100 overflow-hidden">
@@ -22,27 +28,29 @@ export default function HomeMedia() {
           </p>
         </div>
 
-        {/* Media Grid - Placeholder */}
+        {/* Media Grid - Videos */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-          {[1, 2, 3].map((item) => (
+          {videos.map((video, index) => (
             <motion.div
-              key={item}
+              key={video.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: item * 0.1 }}
-              className="group relative border border-charcoal-800/5 overflow-hidden bg-white/50 cursor-pointer hover:border-charcoal-800/10 transition-all"
+              transition={{ duration: 0.8, delay: (index + 1) * 0.1 }}
+              className="group relative border border-charcoal-800/5 overflow-hidden bg-white/50"
             >
-              {/* Placeholder Image */}
-              <div className="aspect-square bg-gradient-to-br from-cream-200 to-cream-300 flex items-center justify-center">
-                <span className="text-charcoal-700/40 font-light text-sm">[PLACEHOLDER - Média {item}]</span>
-              </div>
-
-              {/* Info */}
-              <div className="p-6 space-y-2">
-                <p className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase">Médiajelenlét</p>
-                <h3 className="font-serif-lux text-lg font-light text-charcoal-800">Megjelenés {item}</h3>
-                <p className="text-xs text-charcoal-700/60 font-light">[Megjelenés helye és éve]</p>
+              {/* Video Embed */}
+              <div className="aspect-square overflow-hidden">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src={`https://www.youtube.com/embed/${video.id}`}
+                  title="Media appearance"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
               </div>
             </motion.div>
           ))}
