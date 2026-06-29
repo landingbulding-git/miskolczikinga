@@ -44,11 +44,10 @@ export default function HomeMedia() {
                 <iframe
                   width="100%"
                   height="100%"
-                  src={`https://www.youtube.com/embed/${video.id}`}
+                  src={`https://www.youtube.com/embed/${video.id}?controls=1&modestbranding=1&rel=0&showinfo=0&fs=0`}
                   title="Media appearance"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
                   className="w-full h-full"
                 />
               </div>
