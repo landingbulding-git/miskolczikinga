@@ -25,7 +25,7 @@ export default function AcademyProcess() {
     },
     {
       title: "Piacra Lépés",
-      description: "Sikeres elméleti és gyakorlati vizsga után átveszed a hivatalos, elnök által aláírt állami tanúsítványt és a kész, retusált digitális portfóliódat, amivel már másnap elkezdheted építheted a vevőkörödet.",
+      description: "Sikeres elméleti és gyakorlati vizsga után átveszed a hivatalos, elnök által aláírt állami tanúsítványt és a kész, retusált digitális portfóliódat, amivel már másnap elkezdheted építeni a vevőkörödet.",
       label: "Hivatalos Tanúsítvány"
     }
   ];

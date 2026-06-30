@@ -18,8 +18,8 @@ export default function AcademyPricing() {
   const inclusions = [
     "10 héten át tartó, 100 órás rendkívül intenzív, gyakorlat-orientált élő oktatás",
     "Korlátlan luxus & prémium anyaghasználat (M·A·C, Inglot, Makeup Forever stb.)",
-    "Felnőttképzési regisztrációs számmal ellátott, a Magyar Fodrász-Kozmetikus-Körmös Egyesület pecsétjével és elnöki aláírásával hitelesített, államilag elismert szakmai tanúsítvány",
-    "Kizárólag kis létszámú, elit csoportos mentorálás",
+    "Felnőttképzési regisztrációs számmal ellátott, a Magyar Fodrász-Kozmetikus-Körmös Egyesület által hitelesítetét, államilag elismert szakmai tanúsítvány",
+    "Kizárólag kis létszámú, exkluzív csoportos mentorálás",
     "Online pótlási lehetőség: Hiányzás esetén élő videós közvetítés és visszanézhető órák egy zárt Facebook-csoportban."
   ];
 

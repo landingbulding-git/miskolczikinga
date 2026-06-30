@@ -86,7 +86,7 @@ export default function AcademyCloser() {
             </div>
 
             <p className="text-lg text-cream-100/70 font-light leading-relaxed max-w-xl">
-              Válj keresett szakemberré egy exkluzív, 5 fős mentorprogramban — drága kezdőcsomagok és rejtett költségek nélkül. A prémium piaci belépéshez hiteles szakmai alapok szükségesek. Ez a 100 órás mentorprogram a legmagasabb szintű gyakorlati logikát adja át, melynek végén az államilag elismert oklevéllel, portfólióval és valódi tudással magabiztosan indíthatod el az önálló karrieredet.
+              Válj keresett szakemberré egy exkluzív, 5 fős mentorprogramban, drága kezdőcsomagok és rejtett költségek nélkül. Ez a 100 órás mentorprogram a legmagasabb szintű gyakorlati logikát adja át, melynek végén az államilag elismert oklevéllel, portfólióval és valódi tudással magabiztosan indíthatod el az önálló karrieredet.
             </p>
 
             <div className="space-y-6 pt-4">
@@ -95,7 +95,7 @@ export default function AcademyCloser() {
                 {[
                   "Személyes, privát lakásstúdió: Anyag- és luxustermék-biztosítás",
                   "Saját fotóstúdió: Retusált, azonnal bevethető digitális portfólió",
-                  "Állami tanúsítvány hivatalos elnöki aláírásával",
+                  "Államilag elismert, hitelesített tanúsítvány",
                   "Mentorálás kizárólag kis létszámú csoportban",
                   "Bekerülsz Kinga ajánlási hálózatába — és divatprogramokra is magával visz"
                 ].map((item, idx) => (
@@ -122,7 +122,7 @@ export default function AcademyCloser() {
                   <div className="space-y-2 border-b border-white/10 pb-6">
                     <h3 className="font-serif-lux text-3xl font-light text-white">Jelentkezési űrlap</h3>
                     <p className="text-[10px] font-bold tracking-luxury text-gold-400 uppercase">Alapozó sminkképzés / 100 óra</p>
-                    <p className="text-xs text-cream-100/40 font-light mt-2 italic">Küldd be motivációdat és adataidat, Kinga személyesen értékel minden jelentkezést.</p>
+                    <p className="text-xs text-cream-100/40 font-light mt-2 italic">Kinga személyesen értékel minden jelentkezést.</p>
                   </div>
 
                   {error && (
@@ -205,7 +205,7 @@ export default function AcademyCloser() {
                         disabled={isSubmitting}
                         className="group relative w-full py-6 bg-gold-500 text-charcoal-900 text-xs font-bold tracking-luxury uppercase overflow-hidden transition-all duration-500 hover:bg-gold-400 rounded-none shadow-xl"
                       >
-                        <span className="relative z-10">{isSubmitting ? 'JELENTKEZÉS FELDOLGOZÁSA...' : 'KÜLDÖM A JELENTKEZÉSEM ÉS A MOTIVÁCIÓMAT'}</span>
+                        <span className="relative z-10">{isSubmitting ? 'JELENTKEZÉS FELDOLGOZÁSA...' : 'ELINDÍTOM A PROFI SMINKES KARRIEREM'}</span>
                       </button>
 
                       <p className="text-[10px] text-cream-100/30 font-light leading-relaxed text-center italic">
