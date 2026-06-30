@@ -29,7 +29,7 @@ export default function AcademyOtherCourses() {
     {
       badge: "Mesterképzés",
       title: "Haladó anyag- és formatechnikai mesterprogram",
-      description: "Ez a 60 órás képzés nem a modellekről, hanem a tiszta technikáról szól. Megtanulod az Aqua, Tinta, Gel és Cut Crease rejtelmeit, a Color Smokey-t, valamint a látványos színpadi és kreatív elemek (csillámok, kövek, tollak) magabiztos használatát.",
+      description: "Ez a 60 órás képzés nem a modellekről, hanem a tiszta technikáról szól. Megtanulod az Aqua, Tinta, Gel, a Creative és Stage Makeup technikáinak rejtelmeit, a Color Smokey-t, valamint a látványos színpadi és kreatív elemek (csillámok, kövek, tollak) magabiztos használatát.",
       spots: "csak 5 elérhető hely maradt",
       bgColor: "bg-white",
       borderColor: "border-cream-200/60",

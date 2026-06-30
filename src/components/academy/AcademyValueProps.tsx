@@ -123,7 +123,7 @@ export default function AcademyValueProps() {
             <div className="order-1 lg:order-2 space-y-6">
               <span className="text-[11px] font-mono font-bold text-gold-600 uppercase tracking-widest block">02 / PORTFÓLIÓ</span>
               <h3 className="font-serif-lux text-3xl sm:text-4xl font-medium text-charcoal-900 tracking-tight leading-tight">
-                Saját Fotóstúdió és Retusált Digitális Portfólió
+                Retusált Digitális Portfólió, amivel magabiztosan piacra tudsz lépni.
               </h3>
               <p className="text-charcoal-700 font-light leading-relaxed">
                 A tanfolyam során elkészített legjobb sminkjeidről és a záróvizsgádról professzionális stúdiókörnyezetben, csúcsminőségű felszereléssel készítünk képeket. A kész, precízen retusált, magazin-minőségű fotókból egy olyan komplett digitális portfóliót kapsz, amivel azonnal magabiztosan szerezhetsz prémium vendégeket.
