@@ -28,12 +28,9 @@ export default function AcademyValueProps() {
         {/* Section Header */}
         <div className="mb-16 max-w-2xl">
           <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block mb-3">Kiemelkedő Értékajánlataink</span>
-          <h2 className="font-serif-lux text-4xl sm:text-6xl font-light text-charcoal-800 tracking-tight leading-none mb-6">
-            Minden részlet a szakmai <br /><span className="italic">kiteljesedést</span> szolgálja.
+          <h2 className="font-serif-lux text-4xl sm:text-6xl font-light text-charcoal-800 tracking-tight leading-none">
+            Minden részlet a szakmai kiteljesedést szolgálja.
           </h2>
-          <p className="text-lg text-charcoal-700/70 font-light leading-relaxed">
-            Nem titkolózunk, nincsenek kötelező kezdőcsomagok. Az egyetlen célunk, hogy gondolkodó, sikeres szakembert képezzünk belőled gyorsan és alaposan.
-          </p>
         </div>
         
         <div className="space-y-24 md:space-y-32">
