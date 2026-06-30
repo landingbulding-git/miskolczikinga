@@ -42,7 +42,8 @@ export default function AcademyOtherCourses() {
         { label: "Időkeret", value: "2 hónap" },
         { label: "Formátum", value: "Privát, egyéni felkészítés" },
         { label: "Feltétel", value: "Sminkes előképzettség" },
-        { label: "Ár", value: "Hazai: 150 000 Ft/szám, Nemzetközi: 500 000 Ft/szám" }
+        { label: "Hazai versenyek", value: "150 000 Ft / szám" },
+        { label: "Nemzetközi versenyek", value: "500 000 Ft / szám" }
       ]
     },
     {
