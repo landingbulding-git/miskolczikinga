@@ -87,8 +87,8 @@ export default function AcademyProblem() {
           <div className="flex flex-col lg:flex-row gap-12 items-center">
             <div className="lg:w-1/2">
               <img
-                src="https://via.placeholder.com/400x400"
-                alt="Placeholder"
+                src="https://ihbwkp8vwcp4igya.public.blob.vercel-storage.com/academy_problemreview.webp"
+                alt="Solutions"
                 className="w-full h-auto rounded-sm shadow-lg"
               />
             </div>
@@ -102,12 +102,12 @@ export default function AcademyProblem() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: idx * 0.1 }}
-                    className="flex gap-4 justify-end"
+                    className="flex gap-4"
                   >
-                    <p className="text-base text-charcoal-700/80 font-light leading-relaxed text-right">
+                    <span className="text-gold-400 font-bold text-lg mt-1 shrink-0">✓</span>
+                    <p className="text-base text-charcoal-700/80 font-light leading-relaxed">
                       {solution.description}
                     </p>
-                    <span className="text-gold-400 font-bold text-lg mt-1 shrink-0">✓</span>
                   </motion.li>
                 ))}
               </ul>
