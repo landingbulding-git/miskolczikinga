@@ -3,13 +3,16 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React from 'react';
+import React, { useState } from 'react';
+import { Menu, X } from 'lucide-react';
 
 interface NavbarProps {
   currentPage: 'home' | 'sminktetovalas' | 'sminkkepzes';
 }
 
 export default function Navbar({ currentPage }: NavbarProps) {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const scrollToForm = () => {
     const anchorId = currentPage === 'sminkkepzes' ? 'academy-form-anchor' : 'lead-form-anchor';
     const el = document.getElementById(anchorId);
@@ -77,42 +80,55 @@ export default function Navbar({ currentPage }: NavbarProps) {
 
         {/* Action Elements */}
         <div className="flex items-center gap-2 sm:gap-4">
-          {/* Mobile view text indicator for navigation alternative */}
-          <div className="flex md:hidden items-center gap-1 bg-cream-200 p-1 rounded-lg border border-cream-300">
-            <a
-              href="/"
-              className={`px-2 py-1.5 text-[8px] font-mono font-bold uppercase tracking-wider rounded no-underline ${
-                currentPage === 'home' ? 'bg-charcoal-900 text-cream-50' : 'text-charcoal-700'
-              }`}
-            >
-              Rólam
-            </a>
-            <a
-              href="/sminktetovalas"
-              className={`px-2 py-1.5 text-[8px] font-mono font-bold uppercase tracking-wider rounded no-underline ${
-                currentPage === 'sminktetovalas' ? 'bg-charcoal-900 text-cream-50' : 'text-charcoal-700'
-              }`}
-            >
-              Tetoválás
-            </a>
-            <a
-              href="/sminkkepzes"
-              className={`px-2 py-1.5 text-[8px] font-mono font-bold uppercase tracking-wider rounded no-underline ${
-                currentPage === 'sminkkepzes' ? 'bg-charcoal-900 text-cream-50' : 'text-charcoal-700'
-              }`}
-            >
-              Iskola
-            </a>
-          </div>
+          {/* Mobile Hamburger Menu */}
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="md:hidden text-charcoal-800 p-2 hover:bg-cream-200 rounded transition-colors"
+          >
+            {menuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
 
           <button
             onClick={scrollToForm}
-            className="group relative px-5 sm:px-6 py-2.5 sm:py-3 bg-charcoal-800 text-cream-100 text-[10px] sm:text-xs font-bold tracking-luxury uppercase overflow-hidden transition-all duration-500 hover:bg-charcoal-700 rounded-none"
+            className="bg-gold-400 text-charcoal-950 px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-mono text-[10px] sm:text-xs font-bold tracking-wider uppercase shadow-xl border border-gold-300 hover:bg-gold-300 transition-all cursor-pointer flex items-center gap-1.5 text-left"
           >
-            <span className="relative z-10">{currentPage === 'sminkkepzes' ? 'Jelentkezem képzésre' : 'Konzultáció'}</span>
-            <div className="absolute inset-0 bg-gold-400 translate-y-full group-hover:translate-y-0 transition-transform duration-500 opacity-10" />
+            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0" />
+            <span className="hidden sm:inline">{currentPage === 'sminkkepzes' ? 'Jelentkezem Kingához képzésre' : 'Jelentkezem egyéni tervezésre Kingához'}</span>
+            <span className="sm:hidden">{currentPage === 'sminkkepzes' ? 'Képzés' : 'Konzultáció'}</span>
           </button>
         </div>
+
+        {/* Mobile Menu Dropdown */}
+        {menuOpen && (
+          <div className="absolute top-full left-0 right-0 bg-cream-100/95 backdrop-blur-md border-b border-cream-300/30 md:hidden">
+            <div className="flex flex-col items-start gap-0 px-4 py-4 max-w-7xl mx-auto">
+              <a
+                href="/"
+                className={`w-full px-3 py-2 text-sm font-mono font-bold uppercase tracking-wider rounded transition-colors no-underline ${
+                  currentPage === 'home' ? 'bg-charcoal-900 text-cream-50' : 'text-charcoal-700 hover:bg-cream-200'
+                }`}
+              >
+                Rólam
+              </a>
+              <a
+                href="/sminktetovalas"
+                className={`w-full px-3 py-2 text-sm font-mono font-bold uppercase tracking-wider rounded transition-colors no-underline ${
+                  currentPage === 'sminktetovalas' ? 'bg-charcoal-900 text-cream-50' : 'text-charcoal-700 hover:bg-cream-200'
+                }`}
+              >
+                Sminktetoválás
+              </a>
+              <a
+                href="/sminkkepzes"
+                className={`w-full px-3 py-2 text-sm font-mono font-bold uppercase tracking-wider rounded transition-colors no-underline ${
+                  currentPage === 'sminkkepzes' ? 'bg-charcoal-900 text-cream-50' : 'text-charcoal-700 hover:bg-cream-200'
+                }`}
+              >
+                Sminkiskola
+              </a>
+            </div>
+          </div>
+        )}
       </div>
     </header>
   );
