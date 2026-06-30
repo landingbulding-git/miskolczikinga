@@ -73,9 +73,9 @@ export default function AcademyValueProps() {
               className="lg:w-1/2 relative"
             >
               <div className="aspect-[4/3] rounded-sm overflow-hidden shadow-2xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&q=80&w=800" 
-                  alt="Profi sminkek" 
+                <img
+                  src="https://ihbwkp8vwcp4igya.public.blob.vercel-storage.com/academy/academy_valuprop1.webp"
+                  alt="Profi sminkek"
                   className="w-full h-full object-cover grayscale-[0.1]"
                 />
               </div>
@@ -132,9 +132,9 @@ export default function AcademyValueProps() {
               className="lg:w-1/2 relative"
             >
               <div className="aspect-[4/3] rounded-sm overflow-hidden shadow-2xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=800" 
-                  alt="Portfólió fotózás" 
+                <img
+                  src="https://ihbwkp8vwcp4igya.public.blob.vercel-storage.com/academy/academy_valuprop2.webp"
+                  alt="Portfólió fotózás"
                   className="w-full h-full object-cover grayscale-[0.1]"
                 />
               </div>
@@ -217,9 +217,9 @@ export default function AcademyValueProps() {
               className="lg:w-1/2"
             >
               <div className="aspect-[4/3] rounded-sm overflow-hidden shadow-2xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&q=80&w=800" 
-                  alt="Modell sminkelés" 
+                <img
+                  src="https://ihbwkp8vwcp4igya.public.blob.vercel-storage.com/academy/academy_valuprop3JPG.webp"
+                  alt="Modell sminkelés"
                   className="w-full h-full object-cover grayscale-[0.1]"
                 />
               </div>
@@ -290,9 +290,9 @@ export default function AcademyValueProps() {
               className="lg:w-1/2"
             >
               <div className="aspect-[4/3] rounded-sm overflow-hidden shadow-2xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&q=80&w=800" 
-                  alt="Bőrdiagnosztika" 
+                <img
+                  src="https://ihbwkp8vwcp4igya.public.blob.vercel-storage.com/academy/academy_valueprop4.webp"
+                  alt="Bőrdiagnosztika"
                   className="w-full h-full object-cover grayscale-[0.1]"
                 />
               </div>

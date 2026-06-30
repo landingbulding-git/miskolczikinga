@@ -91,9 +91,9 @@ export default function AcademyHero() {
               className="relative"
             >
               <div className="aspect-[4/5] overflow-hidden rounded-sm shadow-[0_30px_60px_-15px_rgba(0,0,0,0.15)] bg-cream-200">
-                <img 
-                  src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&q=80&w=800"
-                  alt="Hovorka-Miskolczi Kinga Atelier" 
+                <img
+                  src="https://ihbwkp8vwcp4igya.public.blob.vercel-storage.com/academy/academy_hero.webp"
+                  alt="Hovorka-Miskolczi Kinga Atelier"
                   className="w-full h-full object-cover grayscale-[0.2] contrast-[1.1] brightness-[1.02]"
                 />
               </div>
