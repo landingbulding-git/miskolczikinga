@@ -158,36 +158,6 @@ export default function ValueProps() {
                     </p>
                   </div>
 
-                  {/* Visual Economy horizontal icon rows (Accelerating Visual Learning) */}
-                  <div className="pt-6 border-t border-cream-300">
-                    <span className="text-[10px] font-mono uppercase tracking-wider text-charcoal-700 font-semibold block mb-4">
-                      Szakmai és technikai garanciák:
-                    </span>
-                    
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                      {p.features.map((f, fIdx) => {
-                        const FeatureIcon = f.icon;
-                        return (
-                          <div 
-                            key={fIdx} 
-                            className="bg-white/80 border border-cream-300 px-4 py-3 rounded-xl flex items-start gap-3 shadow-sm hover:border-gold-300 transition-colors"
-                          >
-                            <div className="p-1.5 rounded-lg bg-gold-400/10 text-gold-600">
-                              <FeatureIcon className="w-4 h-4 shrink-0" />
-                            </div>
-                            <div>
-                              <h5 className="font-sans font-bold text-xs text-charcoal-900">
-                                {f.title}
-                              </h5>
-                              <p className="text-[10px] text-charcoal-700 font-light mt-0.5 leading-snug">
-                                {f.desc}
-                              </p>
-                            </div>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </div>
 
                   {/* Interconnected click tag */}
                   <div className="pt-4 flex items-center gap-2">
