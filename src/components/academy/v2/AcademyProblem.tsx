@@ -43,9 +43,9 @@ export default function AcademyProblem() {
         
         {/* Section Heading */}
         <div className="max-w-3xl mb-16 space-y-6">
-          <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block">Miért választanak mások másként</span>
+          <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block">A STABIL ALAPOK A LEGFONTOSABBAK</span>
           <h2 className="font-serif-lux text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight text-charcoal-800 leading-[1.1]">
-            A tapasztalatok, amelyek ezt az alapképzést formálták.
+          Számos lehetőségünk van, ha úgy döntünk, hogy a sminkelés lesz a hivatásunk.  A legelitebb nemzetközi eseményeken tapasztalhattam meg versenyzőként és zsűritagként is, hogy milyen fontosak a stabil alapok. A szakma legjobbjaitól tanulhattam, azonban ez keveseknek adatik meg:
           </h2>
         </div>
 
@@ -67,14 +67,9 @@ export default function AcademyProblem() {
                   className="flex gap-4"
                 >
                   <span className="text-gold-400 font-bold text-lg mt-1 shrink-0">•</span>
-                  <div>
-                    <h4 className="font-serif-lux text-lg font-bold text-charcoal-800 mb-2">
-                      {problem.title}:
-                    </h4>
-                    <p className="text-base text-charcoal-700/80 font-light leading-relaxed">
-                      {problem.description}
-                    </p>
-                  </div>
+                  <p className="text-base text-charcoal-700/80 font-light leading-relaxed">
+                    {problem.description}
+                  </p>
                 </motion.li>
               ))}
             </ul>
@@ -102,14 +97,9 @@ export default function AcademyProblem() {
                   className="flex gap-4"
                 >
                   <span className="text-gold-400 font-bold text-lg mt-1 shrink-0">✓</span>
-                  <div>
-                    <h4 className="font-serif-lux text-lg font-bold text-charcoal-800 mb-2">
-                      {solution.title}:
-                    </h4>
-                    <p className="text-base text-charcoal-700/80 font-light leading-relaxed">
-                      {solution.description}
-                    </p>
-                  </div>
+                  <p className="text-base text-charcoal-700/80 font-light leading-relaxed">
+                    {solution.description}
+                  </p>
                 </motion.li>
               ))}
             </ul>
