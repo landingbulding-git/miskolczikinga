@@ -29,7 +29,8 @@ export default function AcademyOtherCourses() {
       details: [
         { label: "Időtartam", value: "60 óra (10 alkalom × 6 óra)" },
         { label: "Létszám", value: "Max. 5 fő" },
-        { label: "Feltétel", value: "Sminkes előképzettség" }
+        { label: "Feltétel", value: "Sminkes előképzettség" },
+        { label: "A képzés ára", value: "800 000 Ft" }
       ]
     },
     {
@@ -40,7 +41,8 @@ export default function AcademyOtherCourses() {
       details: [
         { label: "Időkeret", value: "2 hónap" },
         { label: "Formátum", value: "Privát, egyéni felkészítés" },
-        { label: "Feltétel", value: "Sminkes előképzettség" }
+        { label: "Feltétel", value: "Sminkes előképzettség" },
+        { label: "Ár", value: "Hazai: 150 000 Ft/szám, Nemzetközi: 500 000 Ft/szám" }
       ]
     },
     {
@@ -51,7 +53,8 @@ export default function AcademyOtherCourses() {
       details: [
         { label: "Időtartam", value: "3 óra" },
         { label: "Létszám", value: "1 fő (vagy max. 2-3 barátnő)" },
-        { label: "Eredmény", value: "Saját, egyedi sminkrutin" }
+        { label: "Eredmény", value: "Saját, egyedi sminkrutin" },
+        { label: "A képzés ára", value: "60 000 Ft" }
       ]
     }
   ];
