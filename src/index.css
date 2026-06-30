@@ -37,10 +37,16 @@ body {
 
 .font-serif-lux {
   font-family: var(--font-serif);
+  font-style: italic;
   letter-spacing: -0.02em;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+}
+
+p {
   font-family: "Cormorant Garamond", Georgia, serif;
 }
 
