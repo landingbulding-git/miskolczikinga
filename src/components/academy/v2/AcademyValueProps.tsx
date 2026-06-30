@@ -113,7 +113,7 @@ export default function AcademyValueProps() {
                 </h3>
               </div>
               <p className="text-base text-charcoal-700/80 font-light leading-relaxed">
-                A tanfolyam során elkészített legjobb sminkjeidről és a záróvizsgádról <span className="font-bold">professzionális stúdiókörnyezetben, csúcsminőségű felszereléssel</span> készítünk képeket. A kész, <span className="font-bold">precízen retusált, magazin-minőségű fotókból</span> egy olyan komplett digitális portfóliót kapsz, amivel <span className="font-bold">azonnal magabiztosan szerezhetsz prémium vendégeket</span>.
+                A tanfolyam során elkészített legjobb sminkjeidről és a záróvizsgádról <span className="font-bold">letisztult stúdiókörnyezetben, profi felszereléssel</span> készítünk képeket. A kész, <span className="font-bold">precízen retusált, magazin-minőségű fotókból</span> egy olyan komplett digitális portfóliót kapsz, amivel <span className="font-bold">azonnal magabiztosan szerezhetsz prémium vendégeket</span>.
               </p>
 
               <div className="pl-8 border-l border-gold-400/30">
@@ -224,6 +224,27 @@ export default function AcademyValueProps() {
                 />
               </div>
             </motion.div>
+          </div>
+
+          {/* Makeup Types & Techniques Bar */}
+          <div className="py-12 border-y border-charcoal-800/5">
+            <p className="text-[10px] font-bold tracking-luxury text-charcoal-700/40 uppercase text-center mb-10">
+              A képzés során megtanult sminktípusok és technikák
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div className="space-y-4">
+                <p className="text-[11px] font-bold tracking-luxury text-gold-600 uppercase">Sminktípusok</p>
+                <div className="space-y-2 text-sm text-charcoal-700/70 font-light">
+                  <p>Nude • Nappali • Alkalmi • Menyasszonyi • Örömanya • Smokey • Cut-crease • Strobing • Glitter • Graphic • Kreatív</p>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <p className="text-[11px] font-bold tracking-luxury text-gold-600 uppercase">Sminktechnikák</p>
+                <div className="space-y-2 text-sm text-charcoal-700/70 font-light">
+                  <p>Ceruza • Krém • Gél • Por • Cut-crease • Smokey • Blending • Contouring • Highlighting • Ombre • Color theory</p>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Pillar 4: Bőrdiagnosztika */}
