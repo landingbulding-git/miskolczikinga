@@ -226,31 +226,32 @@ export default function AcademyValueProps() {
             </motion.div>
           </div>
 
-          {/* Makeup Types Bar */}
-          <div className="py-12 border-y border-charcoal-800/5">
-            <p className="text-[10px] font-bold tracking-luxury text-charcoal-700/40 uppercase text-center mb-10">
-              Sminktípusok
-            </p>
-            <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 opacity-40 grayscale transition-all hover:grayscale-0 hover:opacity-100 duration-1000">
-              {["NUDE", "NAPPALI", "ALKALMI", "MENYASSZONYI", "ÖRÖMANYA", "SMOKEY", "CUT-CREASE", "STROBING"].map((type, idx) => (
-                <span key={idx} className="font-serif-lux text-sm tracking-widest font-medium text-charcoal-900">
-                  {type}
-                </span>
-              ))}
+          {/* Makeup Types & Techniques Bar */}
+          <div className="border-y border-charcoal-800/5">
+            <div className="py-12">
+              <p className="text-[10px] font-bold tracking-luxury text-charcoal-700/40 uppercase text-center mb-10">
+                Sminktípusok
+              </p>
+              <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 opacity-40 grayscale transition-all hover:grayscale-0 hover:opacity-100 duration-1000">
+                {["NUDE", "NAPPALI", "ALKALMI", "MENYASSZONYI", "ÖRÖMANYA", "SMOKEY", "CUT-CREASE", "STROBING"].map((type, idx) => (
+                  <span key={idx} className="font-serif-lux text-sm tracking-widest font-medium text-charcoal-900">
+                    {type}
+                  </span>
+                ))}
+              </div>
             </div>
-          </div>
 
-          {/* Makeup Techniques Bar */}
-          <div className="py-12 border-y border-charcoal-800/5">
-            <p className="text-[10px] font-bold tracking-luxury text-charcoal-700/40 uppercase text-center mb-10">
-              Sminktechnikák
-            </p>
-            <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 opacity-40 grayscale transition-all hover:grayscale-0 hover:opacity-100 duration-1000">
-              {["CERUZA", "KRÉM", "GÉL", "POR", "CUT-CREASE", "SMOKEY"].map((tech, idx) => (
-                <span key={idx} className="font-serif-lux text-sm tracking-widest font-medium text-charcoal-900">
-                  {tech}
-                </span>
-              ))}
+            <div className="py-8 border-t border-charcoal-800/5">
+              <p className="text-[10px] font-bold tracking-luxury text-charcoal-700/40 uppercase text-center mb-10">
+                Sminktechnikák
+              </p>
+              <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 opacity-40 grayscale transition-all hover:grayscale-0 hover:opacity-100 duration-1000">
+                {["CERUZA", "KRÉM", "GÉL", "POR", "CUT-CREASE", "SMOKEY"].map((tech, idx) => (
+                  <span key={idx} className="font-serif-lux text-sm tracking-widest font-medium text-charcoal-900">
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
 
