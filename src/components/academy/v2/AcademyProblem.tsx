@@ -42,11 +42,8 @@ export default function AcademyProblem() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Heading */}
-        <div className="max-w-3xl mb-16 space-y-6">
+        <div className="mb-16 text-center">
           <span className="text-[11px] font-bold tracking-luxury text-gold-500 uppercase block">A STABIL ALAPOK A LEGFONTOSABBAK</span>
-          <h2 className="font-serif-lux text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight text-charcoal-800 leading-[1.1]">
-          Számos lehetőségünk van, ha úgy döntünk, hogy a sminkelés lesz a hivatásunk.  A legelitebb nemzetközi eseményeken tapasztalhattam meg versenyzőként és zsűritagként is, hogy milyen fontosak a stabil alapok. A szakma legjobbjaitól tanulhattam, azonban ez keveseknek adatik meg:
-          </h2>
         </div>
 
         {/* Problems Section */}
