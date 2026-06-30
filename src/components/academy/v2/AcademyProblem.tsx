@@ -84,13 +84,28 @@ export default function AcademyProblem() {
             </h3>
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-12 items-center">
+          <div className="flex flex-col lg:flex-row gap-12 items-start">
             <div className="lg:w-1/2">
-              <img
-                src="https://ihbwkp8vwcp4igya.public.blob.vercel-storage.com/academy_problemreview.webp"
-                alt="Solutions"
-                className="w-full h-auto rounded-sm shadow-lg"
-              />
+              <div className="space-y-3">
+                <img
+                  src="https://ihbwkp8vwcp4igya.public.blob.vercel-storage.com/academy_problemreview.webp"
+                  alt="Wéber Kata beauty és esküvői sminkes"
+                  className="w-full h-auto rounded-sm shadow-lg"
+                />
+                <div className="text-center">
+                  <p className="text-sm text-charcoal-700/80 font-light">
+                    Wéber Kata beauty és esküvői sminkes
+                  </p>
+                  <a
+                    href="https://eskuvoclassic.hu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-gold-500 font-bold tracking-luxury uppercase hover:text-gold-600 transition-colors"
+                  >
+                    eskuvoclassic.hu
+                  </a>
+                </div>
+              </div>
             </div>
 
             <div className="lg:w-1/2">
