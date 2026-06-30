@@ -3,11 +3,19 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 
 export default function AcademyValueProps() {
   const [showTypes, setShowTypes] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowTypes(prev => !prev);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
   const scrollToForm = () => {
     const el = document.getElementById('academy-form-anchor');
     if (el) {
@@ -226,29 +234,10 @@ export default function AcademyValueProps() {
 
           {/* Makeup Types & Techniques Bar */}
           <div className="border-y border-charcoal-800/5">
-            <div className="py-12 flex flex-col items-center gap-8">
-              <div className="flex gap-4">
-                <button
-                  onClick={() => setShowTypes(true)}
-                  className={`text-[10px] font-bold tracking-luxury uppercase transition-all duration-500 ${
-                    showTypes
-                      ? 'text-charcoal-800 border-b-2 border-gold-400'
-                      : 'text-charcoal-700/40 border-b-2 border-transparent'
-                  }`}
-                >
-                  Sminktípusok
-                </button>
-                <button
-                  onClick={() => setShowTypes(false)}
-                  className={`text-[10px] font-bold tracking-luxury uppercase transition-all duration-500 ${
-                    !showTypes
-                      ? 'text-charcoal-800 border-b-2 border-gold-400'
-                      : 'text-charcoal-700/40 border-b-2 border-transparent'
-                  }`}
-                >
-                  Sminktechnikák
-                </button>
-              </div>
+            <div className="py-12">
+              <p className="text-[10px] font-bold tracking-luxury text-charcoal-700/40 uppercase text-center mb-10">
+                {showTypes ? 'Sminktípusok' : 'Sminktechnikák'}
+              </p>
 
               {showTypes ? (
                 <motion.div
@@ -256,7 +245,7 @@ export default function AcademyValueProps() {
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.6 }}
-                  className="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 opacity-40 grayscale transition-all hover:grayscale-0 hover:opacity-100 duration-1000 w-full"
+                  className="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 opacity-40 grayscale transition-all hover:grayscale-0 hover:opacity-100 duration-1000"
                 >
                   {["NUDE", "NAPPALI", "ALKALMI", "MENYASSZONYI", "ÖRÖMANYA", "SMOKEY", "CUT-CREASE", "STROBING"].map((type, idx) => (
                     <span key={idx} className="font-serif-lux text-sm tracking-widest font-medium text-charcoal-900">
@@ -270,7 +259,7 @@ export default function AcademyValueProps() {
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.6 }}
-                  className="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 opacity-40 grayscale transition-all hover:grayscale-0 hover:opacity-100 duration-1000 w-full"
+                  className="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 opacity-40 grayscale transition-all hover:grayscale-0 hover:opacity-100 duration-1000"
                 >
                   {["CERUZA", "KRÉM", "GÉL", "POR", "CUT-CREASE", "SMOKEY"].map((tech, idx) => (
                     <span key={idx} className="font-serif-lux text-sm tracking-widest font-medium text-charcoal-900">
