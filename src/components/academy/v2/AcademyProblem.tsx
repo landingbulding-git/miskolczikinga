@@ -84,48 +84,45 @@ export default function AcademyProblem() {
             </h3>
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-12 items-start">
-            <div className="lg:w-1/2">
-              <div className="space-y-3">
-                <img
-                  src="https://ihbwkp8vwcp4igya.public.blob.vercel-storage.com/academy_problemreview.webp"
-                  alt="Wéber Kata beauty és esküvői sminkes"
-                  className="w-full h-auto rounded-sm shadow-lg"
-                />
-                <div className="text-center">
-                  <p className="text-sm text-charcoal-700/80 font-light">
-                    Wéber Kata beauty és esküvői sminkes
+          <div className="mx-auto max-w-3xl text-center space-y-8">
+            <ul className="space-y-6">
+              {solutions.map((solution, idx) => (
+                <motion.li
+                  key={idx}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: idx * 0.1 }}
+                  className="flex gap-4 justify-center"
+                >
+                  <span className="text-gold-400 font-bold text-lg mt-1 shrink-0">✓</span>
+                  <p className="text-base text-charcoal-700/80 font-light leading-relaxed">
+                    {solution.description}
                   </p>
-                  <a
-                    href="https://eskuvoclassic.hu"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs text-gold-500 font-bold tracking-luxury uppercase hover:text-gold-600 transition-colors"
-                  >
-                    eskuvoclassic.hu
-                  </a>
-                </div>
-              </div>
-            </div>
+                </motion.li>
+              ))}
+            </ul>
 
-            <div className="lg:w-1/2">
-              <ul className="space-y-6">
-                {solutions.map((solution, idx) => (
-                  <motion.li
-                    key={idx}
-                    initial={{ opacity: 0, x: 20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: idx * 0.1 }}
-                    className="flex gap-4"
-                  >
-                    <span className="text-gold-400 font-bold text-lg mt-1 shrink-0">✓</span>
-                    <p className="text-base text-charcoal-700/80 font-light leading-relaxed">
-                      {solution.description}
-                    </p>
-                  </motion.li>
-                ))}
-              </ul>
+            <div className="space-y-3 pt-8">
+              <div>
+                <p className="text-sm text-charcoal-700/80 font-light">
+                  Wéber Kata beauty és esküvői sminkes
+                </p>
+                <a
+                  href="https://eskuvoclassic.hu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-gold-500 font-bold tracking-luxury uppercase hover:text-gold-600 transition-colors"
+                >
+                  eskuvoclassic.hu
+                </a>
+              </div>
+
+              <img
+                src="https://ihbwkp8vwcp4igya.public.blob.vercel-storage.com/academy_problemreview.webp"
+                alt="Wéber Kata beauty és esküvői sminkes"
+                className="w-full max-w-md h-auto rounded-sm shadow-lg mx-auto"
+              />
             </div>
           </div>
         </div>
