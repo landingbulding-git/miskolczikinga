@@ -28,7 +28,7 @@ export default function HomeHero() {
               <div className="w-px h-4 bg-charcoal-700/20" />
               <span className="font-serif-lux font-semibold text-sm tracking-wider">Versenyfelkészítő</span>
               <div className="w-px h-4 bg-charcoal-700/20" />
-              <span className="font-serif-lux font-semibold text-sm tracking-wider">3× VB-dobogós</span>
+              <span className="font-serif-lux font-semibold text-sm tracking-wider">3× VB ezüstérmes</span>
               <div className="w-px h-4 bg-charcoal-700/20" />
               <span className="font-sans font-black uppercase text-sm tracking-tighter">EB-arany</span>
             </motion.div>
@@ -42,7 +42,7 @@ export default function HomeHero() {
             >
               <h1 className="font-serif-lux text-4xl sm:text-5xl lg:text-5xl font-light tracking-tight text-charcoal-800 leading-[1.2]">
                 Hovorka-Miskolczi Kinga vagyok, <br />
-                <span className="italic text-gold-600">Világ és európabajnok sminkmester.</span>
+                <span className="italic text-gold-600">többszörös VB ezüstérmes és EB aranyérmes sminkmester.</span>
               </h1>
             </motion.div>
 
@@ -53,7 +53,7 @@ export default function HomeHero() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-lg sm:text-xl text-charcoal-700 font-light leading-relaxed max-w-2xl"
             >
-              <span className="font-bold">Több mint 20 éve</span> foglalkozom professzionális sminkeléssel, és ugyanennyi ideje aktív szereplője vagyok a hazai és nemzetközi sminkversenyek világának. Ma pedig <span className="font-bold">hazai és nemzetközi zsűritagként, valamint versenyfelkészítőként</span> veszek részt a szakmai életben.
+              <span className="font-bold">Több mint 20 éve</span> foglalkozom professzionális sminkeléssel, és ugyanennyi ideje aktív szereplője vagyok a hazai és nemzetközi sminkversenyek világának. Ma pedig <span className="font-bold">hazai és nemzetközi zsűritagként, valamint versenyfelkészítőként és oktatóként</span> veszek részt a szakmai életben.
             </motion.p>
 
             {/* CTA */}

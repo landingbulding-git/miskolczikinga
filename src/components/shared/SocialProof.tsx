@@ -18,7 +18,7 @@ export default function SocialProof() {
       <div className="w-px h-4 bg-charcoal-700/20" />
       <span className="font-serif-lux font-semibold text-sm tracking-wider">Versenyfelkészítő</span>
       <div className="w-px h-4 bg-charcoal-700/20" />
-      <span className="font-serif-lux font-semibold text-sm tracking-wider">3× VB-dobogós</span>
+      <span className="font-serif-lux font-semibold text-sm tracking-wider">3× VB ezüstérmes</span>
       <div className="w-px h-4 bg-charcoal-700/20" />
       <span className="font-sans font-black uppercase text-sm tracking-tighter">EB-arany</span>
     </motion.div>

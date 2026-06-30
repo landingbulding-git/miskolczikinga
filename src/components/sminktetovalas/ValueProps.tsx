@@ -147,9 +147,7 @@ export default function ValueProps() {
                 {/* Text Copy & Icon Row */}
                 <div className={`col-span-1 lg:col-span-7 space-y-6 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
                   <div className="space-y-4">
-                    <span className="text-gold-600 font-mono font-semibold text-xs tracking-widest uppercase">
-                      Pillér {p.num}
-                    </span>
+                    <span></span>
                     <h3 className="font-serif-lux text-2xl sm:text-3xl lg:text-4xl font-medium tracking-tight text-charcoal-900 leading-tight">
                       {p.headline}
                     </h3>
