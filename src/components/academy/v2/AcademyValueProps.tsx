@@ -3,10 +3,11 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
 
 export default function AcademyValueProps() {
+  const [showTypes, setShowTypes] = useState(true);
   const scrollToForm = () => {
     const el = document.getElementById('academy-form-anchor');
     if (el) {
@@ -225,30 +226,59 @@ export default function AcademyValueProps() {
 
           {/* Makeup Types & Techniques Bar */}
           <div className="border-y border-charcoal-800/5">
-            <div className="py-12">
-              <p className="text-[10px] font-bold tracking-luxury text-charcoal-700/40 uppercase text-center mb-10">
-                Sminktípusok
-              </p>
-              <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 opacity-40 grayscale transition-all hover:grayscale-0 hover:opacity-100 duration-1000">
-                {["NUDE", "NAPPALI", "ALKALMI", "MENYASSZONYI", "ÖRÖMANYA", "SMOKEY", "CUT-CREASE", "STROBING"].map((type, idx) => (
-                  <span key={idx} className="font-serif-lux text-sm tracking-widest font-medium text-charcoal-900">
-                    {type}
-                  </span>
-                ))}
+            <div className="py-12 flex flex-col items-center gap-8">
+              <div className="flex gap-4">
+                <button
+                  onClick={() => setShowTypes(true)}
+                  className={`text-[10px] font-bold tracking-luxury uppercase transition-all duration-500 ${
+                    showTypes
+                      ? 'text-charcoal-800 border-b-2 border-gold-400'
+                      : 'text-charcoal-700/40 border-b-2 border-transparent'
+                  }`}
+                >
+                  Sminktípusok
+                </button>
+                <button
+                  onClick={() => setShowTypes(false)}
+                  className={`text-[10px] font-bold tracking-luxury uppercase transition-all duration-500 ${
+                    !showTypes
+                      ? 'text-charcoal-800 border-b-2 border-gold-400'
+                      : 'text-charcoal-700/40 border-b-2 border-transparent'
+                  }`}
+                >
+                  Sminktechnikák
+                </button>
               </div>
-            </div>
 
-            <div className="py-8 border-t border-charcoal-800/5">
-              <p className="text-[10px] font-bold tracking-luxury text-charcoal-700/40 uppercase text-center mb-10">
-                Sminktechnikák
-              </p>
-              <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 opacity-40 grayscale transition-all hover:grayscale-0 hover:opacity-100 duration-1000">
-                {["CERUZA", "KRÉM", "GÉL", "POR", "CUT-CREASE", "SMOKEY"].map((tech, idx) => (
-                  <span key={idx} className="font-serif-lux text-sm tracking-widest font-medium text-charcoal-900">
-                    {tech}
-                  </span>
-                ))}
-              </div>
+              {showTypes ? (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.6 }}
+                  className="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 opacity-40 grayscale transition-all hover:grayscale-0 hover:opacity-100 duration-1000 w-full"
+                >
+                  {["NUDE", "NAPPALI", "ALKALMI", "MENYASSZONYI", "ÖRÖMANYA", "SMOKEY", "CUT-CREASE", "STROBING"].map((type, idx) => (
+                    <span key={idx} className="font-serif-lux text-sm tracking-widest font-medium text-charcoal-900">
+                      {type}
+                    </span>
+                  ))}
+                </motion.div>
+              ) : (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.6 }}
+                  className="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 opacity-40 grayscale transition-all hover:grayscale-0 hover:opacity-100 duration-1000 w-full"
+                >
+                  {["CERUZA", "KRÉM", "GÉL", "POR", "CUT-CREASE", "SMOKEY"].map((tech, idx) => (
+                    <span key={idx} className="font-serif-lux text-sm tracking-widest font-medium text-charcoal-900">
+                      {tech}
+                    </span>
+                  ))}
+                </motion.div>
+              )}
             </div>
           </div>
 
