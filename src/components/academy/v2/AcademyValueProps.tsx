@@ -46,7 +46,7 @@ export default function AcademyValueProps() {
             >
               <div className="space-y-3">
                 <span className="text-[11px] font-bold text-gold-500 uppercase tracking-luxury block">01 / Anyagellátás</span>
-                <h3 className="text-[11px] font-bold text-gold-500 uppercase tracking-luxury block">
+                <h3 className="font-serif-lux text-3xl sm:text-4xl font-bold text-charcoal-800 leading-tight" style={{ fontStyle: 'normal' }}>
                   Teljes Körű Prémium Anyagbiztosítás Extra Költségek Nélkül.
                 </h3>
               </div>
@@ -105,7 +105,7 @@ export default function AcademyValueProps() {
             >
               <div className="space-y-3">
                 <span className="text-[11px] font-bold text-gold-500 uppercase tracking-luxury block">02 / Portfólió</span>
-                <h3 className="text-[11px] font-bold text-gold-500 uppercase tracking-luxury block">
+                <h3 className="font-serif-lux text-3xl sm:text-4xl font-bold text-charcoal-800 leading-tight" style={{ fontStyle: 'normal' }}>
                   Retusált Digitális Portfólió, amivel magabiztosan piacra tudsz lépni.
                 </h3>
               </div>
@@ -190,7 +190,7 @@ export default function AcademyValueProps() {
             >
               <div className="space-y-3">
                 <span className="text-[11px] font-bold text-gold-500 uppercase tracking-luxury block">03 / Metodika</span>
-                <h3 className="text-[11px] font-bold text-gold-500 uppercase tracking-luxury block">
+                <h3 className="font-serif-lux text-3xl sm:text-4xl font-bold text-charcoal-800 leading-tight" style={{ fontStyle: 'normal' }}>
                   Legkeresettebb, legmodernebb technikák.
                 </h3>
               </div>
@@ -263,7 +263,7 @@ export default function AcademyValueProps() {
             >
               <div className="space-y-3">
                 <span className="text-[11px] font-bold text-gold-500 uppercase tracking-luxury block">04 / Bőrdiagnosztika</span>
-                <h3 className="text-[11px] font-bold text-gold-500 uppercase tracking-luxury block">
+                <h3 className="font-serif-lux text-3xl sm:text-4xl font-bold text-charcoal-800 leading-tight" style={{ fontStyle: 'normal' }}>
                   A bőr ismerete nélkül a smink csak festék. Itt az alapoktól sajátítod el a lényeget.
                 </h3>
               </div>
