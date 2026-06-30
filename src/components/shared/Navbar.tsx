@@ -90,11 +90,10 @@ export default function Navbar({ currentPage }: NavbarProps) {
 
           <button
             onClick={scrollToForm}
-            className="bg-gold-400 text-charcoal-950 px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-mono text-[10px] sm:text-xs font-bold tracking-wider uppercase shadow-xl border border-gold-300 hover:bg-gold-300 transition-all cursor-pointer flex items-center gap-1.5 text-left"
+            className="group relative px-4 sm:px-6 py-2.5 sm:py-3 bg-charcoal-800 text-cream-100 text-[10px] sm:text-xs font-bold tracking-luxury uppercase overflow-hidden transition-all duration-500 hover:bg-charcoal-700 rounded-none"
           >
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0" />
-            <span className="hidden sm:inline">{currentPage === 'sminkkepzes' ? 'Jelentkezem Kingához képzésre' : 'Jelentkezem egyéni tervezésre Kingához'}</span>
-            <span className="sm:hidden">{currentPage === 'sminkkepzes' ? 'Képzés' : 'Konzultáció'}</span>
+            <span className="relative z-10">{currentPage === 'sminkkepzes' ? 'Jelentkezem képzésre' : 'Konzultáció'}</span>
+            <div className="absolute inset-0 bg-gold-400 translate-y-full group-hover:translate-y-0 transition-transform duration-500 opacity-10" />
           </button>
         </div>
 
